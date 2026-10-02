@@ -1,0 +1,168 @@
+{
+  "000000000000/us-east-1::anp-events" : {
+    "streamName" : "anp-events",
+    "streamArn" : "arn:aws:kinesis:us-east-1:000000000000:stream/anp-events",
+    "accountId" : "000000000000",
+    "streamStatus" : "ACTIVE",
+    "shards" : [ {
+      "shardId" : "shardId-000000000000",
+      "parentShardId" : null,
+      "adjacentParentShardId" : null,
+      "hashKeyRange" : {
+        "startingHashKey" : "0",
+        "endingHashKey" : "340282366920938463463374607431768211455"
+      },
+      "sequenceNumberRange" : {
+        "startingSequenceNumber" : "0",
+        "endingSequenceNumber" : null
+      },
+      "records" : [ {
+        "data" : "eyJ0ZXN0ZSI6ImZsb2NpIn0K",
+        "partitionKey" : "k1",
+        "sequenceNumber" : "1790908515651",
+        "approximateArrivalTimestamp" : "2026-10-02T02:36:58.803076074Z"
+      }, {
+        "data" : "eyJ0ZXN0ZSI6ImZsb2NpIn0K",
+        "partitionKey" : "k1",
+        "sequenceNumber" : "1790908515652",
+        "approximateArrivalTimestamp" : "2026-10-02T02:39:13.625890852Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICI5NmQzNGM4YzIyOTRiYWM5YWY5YzZjZTRkYzY2N2I3OCIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMDI6NDY6MzQuMTkzMTA2KzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiQ2FtcG9zIiwgIkNhbXBvIjogIk1BUkxJTSBMRVNURSIsICJQb8OnbyI6ICI3LU1MTC03N0QtUkpTIiwgIlBlcsOtb2RvIjogIjIwMjEvMDUiLCAiw5NsZW8gKGJibC9kaWEpIjogIm4vYSJ9fQo=",
+        "partitionKey" : "96d34c8c2294bac9af9c6ce4dc667b78",
+        "sequenceNumber" : "1790908515653",
+        "approximateArrivalTimestamp" : "2026-10-02T02:46:34.209036519Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICJkMTQ4MmIyYjJjZGFiNWFiY2NjMDEwNzg3MTgyYjRkYyIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMDI6NDY6MzQuMTkzMTQ2KzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiQ2FtcG9zIiwgIkNhbXBvIjogIk1BUkxJTSBMRVNURSIsICJQb8OnbyI6ICIiLCAiUGVyw61vZG8iOiAiMjAyMS8wNSIsICLDk2xlbyAoYmJsL2RpYSkiOiAiMTIwLDEwMDAifX0K",
+        "partitionKey" : "d1482b2b2cdab5abccc010787182b4dc",
+        "sequenceNumber" : "1790908515654",
+        "approximateArrivalTimestamp" : "2026-10-02T02:46:34.209041019Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICJhOWY4NTBiOTExYzNmYWRmZmNlODM1MWMxNWI2YWRkNCIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMDI6NDY6MzQuMTkzMTYyKzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiU2FudG9zIiwgIkNhbXBvIjogIkNBTVBPIEVYRU1QTE8gQSIsICJQb8OnbyI6ICIxLUVYQS0xLVNQIiwgIlBlcsOtb2RvIjogIjIwMjEvMDUiLCAiw5NsZW8gKGJibC9kaWEpIjogIjEuMjM0LDUwIn19Cg==",
+        "partitionKey" : "a9f850b911c3fadffce8351c15b6add4",
+        "sequenceNumber" : "1790908515655",
+        "approximateArrivalTimestamp" : "2026-10-02T02:46:34.209042819Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICI4NDc2MzQxNTEzMDY5MGM1YjYxZTk2YWQwZWE2YTVlZCIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMDI6NDY6MzQuMTkzMTc0KzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiU2FudG9zIiwgIkNhbXBvIjogIkNBTVBPIEVYRU1QTE8gQSIsICJQb8OnbyI6ICIxLUVYQS0yLVNQIiwgIlBlcsOtb2RvIjogIjIwMjEvMDUiLCAiw5NsZW8gKGJibC9kaWEpIjogIjAifX0K",
+        "partitionKey" : "84763415130690c5b61e96ad0ea6a5ed",
+        "sequenceNumber" : "1790908515656",
+        "approximateArrivalTimestamp" : "2026-10-02T02:46:34.209044519Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICIxMTIzOWIxNGNlMmMwZDNjNzJhYWMzZmE0MjlmMWMwYyIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMDI6NDY6MzQuMTkzMTg2KzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiUG90aWd1YXIiLCAiQ2FtcG8iOiAiQ0FNUE8gRVhFTVBMTyBCIiwgIlBvw6dvIjogIjMtRVhCLTktUk4iLCAiUGVyw61vZG8iOiAiMjAyMS8wNSIsICLDk2xlbyAoYmJsL2RpYSkiOiAiMTUsMjUifX0K",
+        "partitionKey" : "11239b14ce2c0d3c72aac3fa429f1c0c",
+        "sequenceNumber" : "1790908515657",
+        "approximateArrivalTimestamp" : "2026-10-02T02:46:34.209046119Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICI5NmQzNGM4YzIyOTRiYWM5YWY5YzZjZTRkYzY2N2I3OCIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMDI6NDk6NDAuMzY4NDM0KzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiQ2FtcG9zIiwgIkNhbXBvIjogIk1BUkxJTSBMRVNURSIsICJQb8OnbyI6ICI3LU1MTC03N0QtUkpTIiwgIlBlcsOtb2RvIjogIjIwMjEvMDUiLCAiw5NsZW8gKGJibC9kaWEpIjogIm4vYSJ9fQo=",
+        "partitionKey" : "96d34c8c2294bac9af9c6ce4dc667b78",
+        "sequenceNumber" : "1790908515658",
+        "approximateArrivalTimestamp" : "2026-10-02T02:49:40.377128201Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICJkMTQ4MmIyYjJjZGFiNWFiY2NjMDEwNzg3MTgyYjRkYyIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMDI6NDk6NDAuMzY4NDY3KzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiQ2FtcG9zIiwgIkNhbXBvIjogIk1BUkxJTSBMRVNURSIsICJQb8OnbyI6ICIiLCAiUGVyw61vZG8iOiAiMjAyMS8wNSIsICLDk2xlbyAoYmJsL2RpYSkiOiAiMTIwLDEwMDAifX0K",
+        "partitionKey" : "d1482b2b2cdab5abccc010787182b4dc",
+        "sequenceNumber" : "1790908515659",
+        "approximateArrivalTimestamp" : "2026-10-02T02:49:40.377133101Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICJhOWY4NTBiOTExYzNmYWRmZmNlODM1MWMxNWI2YWRkNCIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMDI6NDk6NDAuMzY4NDgxKzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiU2FudG9zIiwgIkNhbXBvIjogIkNBTVBPIEVYRU1QTE8gQSIsICJQb8OnbyI6ICIxLUVYQS0xLVNQIiwgIlBlcsOtb2RvIjogIjIwMjEvMDUiLCAiw5NsZW8gKGJibC9kaWEpIjogIjEuMjM0LDUwIn19Cg==",
+        "partitionKey" : "a9f850b911c3fadffce8351c15b6add4",
+        "sequenceNumber" : "1790908515660",
+        "approximateArrivalTimestamp" : "2026-10-02T02:49:40.377134801Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICI4NDc2MzQxNTEzMDY5MGM1YjYxZTk2YWQwZWE2YTVlZCIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMDI6NDk6NDAuMzY4NDkzKzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiU2FudG9zIiwgIkNhbXBvIjogIkNBTVBPIEVYRU1QTE8gQSIsICJQb8OnbyI6ICIxLUVYQS0yLVNQIiwgIlBlcsOtb2RvIjogIjIwMjEvMDUiLCAiw5NsZW8gKGJibC9kaWEpIjogIjAifX0K",
+        "partitionKey" : "84763415130690c5b61e96ad0ea6a5ed",
+        "sequenceNumber" : "1790908515661",
+        "approximateArrivalTimestamp" : "2026-10-02T02:49:40.377136501Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICIxMTIzOWIxNGNlMmMwZDNjNzJhYWMzZmE0MjlmMWMwYyIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMDI6NDk6NDAuMzY4NTA0KzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiUG90aWd1YXIiLCAiQ2FtcG8iOiAiQ0FNUE8gRVhFTVBMTyBCIiwgIlBvw6dvIjogIjMtRVhCLTktUk4iLCAiUGVyw61vZG8iOiAiMjAyMS8wNSIsICLDk2xlbyAoYmJsL2RpYSkiOiAiMTUsMjUifX0K",
+        "partitionKey" : "11239b14ce2c0d3c72aac3fa429f1c0c",
+        "sequenceNumber" : "1790908515662",
+        "approximateArrivalTimestamp" : "2026-10-02T02:49:40.377138801Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICIzZWU0NmJkYzc1OTk5ZmRkM2Q2YjliYzc2N2QyYmRiZiIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMDM6MDQ6NTIuMjY1NjkwKzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiQ2FtcG9zIiwgIkNhbXBvIjogIk1BUkxJTSBMRVNURSIsICJQb8OnbyI6ICI3LU1MTC03N0QtUkpTIiwgIlBlcsOtb2RvIjogIjIwMjEvMDUiLCAiw5NsZW8gKGJibC9kaWEpIjogIjc0LDQ2NTMifX0K",
+        "partitionKey" : "3ee46bdc75999fdd3d6b9bc767d2bdbf",
+        "sequenceNumber" : "1790908515663",
+        "approximateArrivalTimestamp" : "2026-10-02T03:04:52.316498860Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICI1M2ZjZTk0ZDRiMTA0NGRiOWQ1NmIwYmI3YWE2ZmUyOCIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMDM6MDQ6NTIuMjY1NzMxKzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiQ2FtcG9zIiwgIkNhbXBvIjogIk1BUkxJTSBMRVNURSIsICJQb8OnbyI6ICI3LU1MTC03OEQtUkpTIiwgIlBlcsOtb2RvIjogIjIwMjEvMDUiLCAiw5NsZW8gKGJibC9kaWEpIjogIjEyMCwxMDAwIn19Cg==",
+        "partitionKey" : "53fce94d4b1044db9d56b0bb7aa6fe28",
+        "sequenceNumber" : "1790908515664",
+        "approximateArrivalTimestamp" : "2026-10-02T03:04:52.316504361Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICJhOWY4NTBiOTExYzNmYWRmZmNlODM1MWMxNWI2YWRkNCIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMDM6MDQ6NTIuMjY1NzUxKzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiU2FudG9zIiwgIkNhbXBvIjogIkNBTVBPIEVYRU1QTE8gQSIsICJQb8OnbyI6ICIxLUVYQS0xLVNQIiwgIlBlcsOtb2RvIjogIjIwMjEvMDUiLCAiw5NsZW8gKGJibC9kaWEpIjogIjEuMjM0LDUwIn19Cg==",
+        "partitionKey" : "a9f850b911c3fadffce8351c15b6add4",
+        "sequenceNumber" : "1790908515665",
+        "approximateArrivalTimestamp" : "2026-10-02T03:04:52.316506361Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICI4NDc2MzQxNTEzMDY5MGM1YjYxZTk2YWQwZWE2YTVlZCIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMDM6MDQ6NTIuMjY1NzY5KzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiU2FudG9zIiwgIkNhbXBvIjogIkNBTVBPIEVYRU1QTE8gQSIsICJQb8OnbyI6ICIxLUVYQS0yLVNQIiwgIlBlcsOtb2RvIjogIjIwMjEvMDUiLCAiw5NsZW8gKGJibC9kaWEpIjogIjAifX0K",
+        "partitionKey" : "84763415130690c5b61e96ad0ea6a5ed",
+        "sequenceNumber" : "1790908515666",
+        "approximateArrivalTimestamp" : "2026-10-02T03:04:52.316509261Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICIxMTIzOWIxNGNlMmMwZDNjNzJhYWMzZmE0MjlmMWMwYyIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMDM6MDQ6NTIuMjY1Nzg2KzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiUG90aWd1YXIiLCAiQ2FtcG8iOiAiQ0FNUE8gRVhFTVBMTyBCIiwgIlBvw6dvIjogIjMtRVhCLTktUk4iLCAiUGVyw61vZG8iOiAiMjAyMS8wNSIsICLDk2xlbyAoYmJsL2RpYSkiOiAiMTUsMjUifX0K",
+        "partitionKey" : "11239b14ce2c0d3c72aac3fa429f1c0c",
+        "sequenceNumber" : "1790908515667",
+        "approximateArrivalTimestamp" : "2026-10-02T03:04:52.316512261Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICIzZWU0NmJkYzc1OTk5ZmRkM2Q2YjliYzc2N2QyYmRiZiIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMjA6MzQ6MDEuOTQwMjA1KzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiQ2FtcG9zIiwgIkNhbXBvIjogIk1BUkxJTSBMRVNURSIsICJQb8OnbyI6ICI3LU1MTC03N0QtUkpTIiwgIlBlcsOtb2RvIjogIjIwMjEvMDUiLCAiw5NsZW8gKGJibC9kaWEpIjogIjc0LDQ2NTMifX0K",
+        "partitionKey" : "3ee46bdc75999fdd3d6b9bc767d2bdbf",
+        "sequenceNumber" : "1790972973369",
+        "approximateArrivalTimestamp" : "2026-10-02T20:34:01.958590701Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICI1M2ZjZTk0ZDRiMTA0NGRiOWQ1NmIwYmI3YWE2ZmUyOCIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMjA6MzQ6MDEuOTQwMjM1KzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiQ2FtcG9zIiwgIkNhbXBvIjogIk1BUkxJTSBMRVNURSIsICJQb8OnbyI6ICI3LU1MTC03OEQtUkpTIiwgIlBlcsOtb2RvIjogIjIwMjEvMDUiLCAiw5NsZW8gKGJibC9kaWEpIjogIjEyMCwxMDAwIn19Cg==",
+        "partitionKey" : "53fce94d4b1044db9d56b0bb7aa6fe28",
+        "sequenceNumber" : "1790972973370",
+        "approximateArrivalTimestamp" : "2026-10-02T20:34:01.958594901Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICJhOWY4NTBiOTExYzNmYWRmZmNlODM1MWMxNWI2YWRkNCIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMjA6MzQ6MDEuOTQwMjUwKzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiU2FudG9zIiwgIkNhbXBvIjogIkNBTVBPIEVYRU1QTE8gQSIsICJQb8OnbyI6ICIxLUVYQS0xLVNQIiwgIlBlcsOtb2RvIjogIjIwMjEvMDUiLCAiw5NsZW8gKGJibC9kaWEpIjogIjEuMjM0LDUwIn19Cg==",
+        "partitionKey" : "a9f850b911c3fadffce8351c15b6add4",
+        "sequenceNumber" : "1790972973371",
+        "approximateArrivalTimestamp" : "2026-10-02T20:34:01.958596702Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICI4NDc2MzQxNTEzMDY5MGM1YjYxZTk2YWQwZWE2YTVlZCIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMjA6MzQ6MDEuOTQwMjYzKzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiU2FudG9zIiwgIkNhbXBvIjogIkNBTVBPIEVYRU1QTE8gQSIsICJQb8OnbyI6ICIxLUVYQS0yLVNQIiwgIlBlcsOtb2RvIjogIjIwMjEvMDUiLCAiw5NsZW8gKGJibC9kaWEpIjogIjAifX0K",
+        "partitionKey" : "84763415130690c5b61e96ad0ea6a5ed",
+        "sequenceNumber" : "1790972973372",
+        "approximateArrivalTimestamp" : "2026-10-02T20:34:01.958598502Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICIxMTIzOWIxNGNlMmMwZDNjNzJhYWMzZmE0MjlmMWMwYyIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMjA6MzQ6MDEuOTQwMjc1KzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiUG90aWd1YXIiLCAiQ2FtcG8iOiAiQ0FNUE8gRVhFTVBMTyBCIiwgIlBvw6dvIjogIjMtRVhCLTktUk4iLCAiUGVyw61vZG8iOiAiMjAyMS8wNSIsICLDk2xlbyAoYmJsL2RpYSkiOiAiMTUsMjUifX0K",
+        "partitionKey" : "11239b14ce2c0d3c72aac3fa429f1c0c",
+        "sequenceNumber" : "1790972973373",
+        "approximateArrivalTimestamp" : "2026-10-02T20:34:01.958600102Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICIzZWU0NmJkYzc1OTk5ZmRkM2Q2YjliYzc2N2QyYmRiZiIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMjA6NDA6MzIuMTEwNTYzKzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiQ2FtcG9zIiwgIkNhbXBvIjogIk1BUkxJTSBMRVNURSIsICJQb8OnbyI6ICI3LU1MTC03N0QtUkpTIiwgIlBlcsOtb2RvIjogIjIwMjEvMDUiLCAiw5NsZW8gKGJibC9kaWEpIjogIjc0LDQ2NTMifX0K",
+        "partitionKey" : "3ee46bdc75999fdd3d6b9bc767d2bdbf",
+        "sequenceNumber" : "1790972973374",
+        "approximateArrivalTimestamp" : "2026-10-02T20:40:32.126445437Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICI1M2ZjZTk0ZDRiMTA0NGRiOWQ1NmIwYmI3YWE2ZmUyOCIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMjA6NDA6MzIuMTEwNjQxKzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiQ2FtcG9zIiwgIkNhbXBvIjogIk1BUkxJTSBMRVNURSIsICJQb8OnbyI6ICI3LU1MTC03OEQtUkpTIiwgIlBlcsOtb2RvIjogIjIwMjEvMDUiLCAiw5NsZW8gKGJibC9kaWEpIjogIjEyMCwxMDAwIn19Cg==",
+        "partitionKey" : "53fce94d4b1044db9d56b0bb7aa6fe28",
+        "sequenceNumber" : "1790972973375",
+        "approximateArrivalTimestamp" : "2026-10-02T20:40:32.126452738Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICJhOWY4NTBiOTExYzNmYWRmZmNlODM1MWMxNWI2YWRkNCIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMjA6NDA6MzIuMTEwNjcwKzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiU2FudG9zIiwgIkNhbXBvIjogIkNBTVBPIEVYRU1QTE8gQSIsICJQb8OnbyI6ICIxLUVYQS0xLVNQIiwgIlBlcsOtb2RvIjogIjIwMjEvMDUiLCAiw5NsZW8gKGJibC9kaWEpIjogIjEuMjM0LDUwIn19Cg==",
+        "partitionKey" : "a9f850b911c3fadffce8351c15b6add4",
+        "sequenceNumber" : "1790972973376",
+        "approximateArrivalTimestamp" : "2026-10-02T20:40:32.126459239Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICI4NDc2MzQxNTEzMDY5MGM1YjYxZTk2YWQwZWE2YTVlZCIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMjA6NDA6MzIuMTEwNjg5KzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiU2FudG9zIiwgIkNhbXBvIjogIkNBTVBPIEVYRU1QTE8gQSIsICJQb8OnbyI6ICIxLUVYQS0yLVNQIiwgIlBlcsOtb2RvIjogIjIwMjEvMDUiLCAiw5NsZW8gKGJibC9kaWEpIjogIjAifX0K",
+        "partitionKey" : "84763415130690c5b61e96ad0ea6a5ed",
+        "sequenceNumber" : "1790972973377",
+        "approximateArrivalTimestamp" : "2026-10-02T20:40:32.126464439Z"
+      }, {
+        "data" : "eyJldmVudF9pZCI6ICIxMTIzOWIxNGNlMmMwZDNjNzJhYWMzZmE0MjlmMWMwYyIsICJzb3VyY2UiOiAiYW5wIiwgImluZ2VzdGVkX2F0IjogIjIwMjYtMTAtMDJUMjA6NDA6MzIuMTEwNzA4KzAwOjAwIiwgInJhdyI6IHsiQmFjaWEiOiAiUG90aWd1YXIiLCAiQ2FtcG8iOiAiQ0FNUE8gRVhFTVBMTyBCIiwgIlBvw6dvIjogIjMtRVhCLTktUk4iLCAiUGVyw61vZG8iOiAiMjAyMS8wNSIsICLDk2xlbyAoYmJsL2RpYSkiOiAiMTUsMjUifX0K",
+        "partitionKey" : "11239b14ce2c0d3c72aac3fa429f1c0c",
+        "sequenceNumber" : "1790972973378",
+        "approximateArrivalTimestamp" : "2026-10-02T20:40:32.126466539Z"
+      } ],
+      "closed" : false,
+      "creationTimestamp" : "2026-10-02T02:35:15.658632953Z"
+    } ],
+    "retentionPeriodHours" : 24,
+    "streamCreationTimestamp" : "2026-10-02T02:35:15.650080930Z",
+    "tags" : { },
+    "encryptionType" : "NONE",
+    "keyId" : null,
+    "streamMode" : "PROVISIONED",
+    "enhancedMonitoringMetrics" : [ ],
+    "maxRecordSizeInKiB" : 1024,
+    "shardCountUpdateTimestamps" : [ ]
+  }
+}

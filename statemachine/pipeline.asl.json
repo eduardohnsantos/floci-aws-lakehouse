@@ -1,0 +1,65 @@
+{
+  "Comment": "Extract (chunked loop) -> wait -> transform with retries, alert on failure",
+  "StartAt": "Extract",
+  "States": {
+    "Extract": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "lakehouse-extract",
+        "Payload.$": "$"
+      },
+      "OutputPath": "$.Payload",
+      "Retry": [
+        {
+          "ErrorEquals": ["States.ALL"],
+          "IntervalSeconds": 5,
+          "MaxAttempts": 2,
+          "BackoffRate": 2
+        }
+      ],
+      "Catch": [{ "ErrorEquals": ["States.ALL"], "Next": "NotifyFailure" }],
+      "Next": "MoreRows"
+    },
+    "MoreRows": {
+      "Type": "Choice",
+      "Choices": [
+        { "Variable": "$.done", "BooleanEquals": true, "Next": "WaitForFirehose" }
+      ],
+      "Default": "Extract"
+    },
+    "WaitForFirehose": {
+      "Type": "Wait",
+      "Seconds": 60,
+      "Next": "Transform"
+    },
+    "Transform": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "lakehouse-transform",
+        "Payload": { "bucket": "lakehouse-bronze", "prefix": "anp/" }
+      },
+      "OutputPath": "$.Payload",
+      "Retry": [
+        {
+          "ErrorEquals": ["States.ALL"],
+          "IntervalSeconds": 30,
+          "MaxAttempts": 6,
+          "BackoffRate": 1.0
+        }
+      ],
+      "Catch": [{ "ErrorEquals": ["States.ALL"], "Next": "NotifyFailure" }],
+      "End": true
+    },
+    "NotifyFailure": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::sns:publish",
+      "Parameters": {
+        "TopicArn": "arn:aws:sns:us-east-1:000000000000:pipeline-alerts",
+        "Message.$": "States.JsonToString($)"
+      },
+      "End": true
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "000000000000/topic::us-east-1::arn:aws:sns:us-east-1:000000000000:pipeline-alerts" : {
+    "Name" : "pipeline-alerts",
+    "TopicArn" : "arn:aws:sns:us-east-1:000000000000:pipeline-alerts",
+    "Attributes" : {
+      "Policy" : "",
+      "TopicArn" : "arn:aws:sns:us-east-1:000000000000:pipeline-alerts",
+      "EffectiveDeliveryPolicy" : "",
+      "DisplayName" : "",
+      "DeliveryPolicy" : ""
+    },
+    "Tags" : { },
+    "CreatedAt" : "2026-10-02T02:42:39.651858886Z"
+  }
+}

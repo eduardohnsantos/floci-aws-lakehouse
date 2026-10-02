@@ -1,0 +1,17 @@
+{
+  "000000000000/lakehouse-role" : {
+    "roleId" : "AROAGSFK1EWTHJNJT0F1",
+    "roleName" : "lakehouse-role",
+    "path" : "/",
+    "arn" : "arn:aws:iam::000000000000:role/lakehouse-role",
+    "assumeRolePolicyDocument" : "{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [\n    {\n      \"Effect\": \"Allow\",\n      \"Principal\": {\n        \"Service\": [\n          \"lambda.amazonaws.com\",\n          \"firehose.amazonaws.com\",\n          \"states.amazonaws.com\"\n        ]\n      },\n      \"Action\": \"sts:AssumeRole\"\n    }\n  ]\n}\n",
+    "description" : null,
+    "maxSessionDuration" : 3600,
+    "createDate" : "2026-10-02T02:33:08.967458452Z",
+    "tags" : { },
+    "attachedPolicyArns" : [ ],
+    "inlinePolicies" : { },
+    "permissionsBoundaryArn" : null,
+    "serviceLinkedRole" : false
+  }
+}

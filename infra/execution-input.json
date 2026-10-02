@@ -1,0 +1,9 @@
+{
+  "bucket": "lakehouse-landing",
+  "key": "anp/anp_sample.csv",
+  "offset": 0,
+  "limit": 1000,
+  "fault_rate": 0.05,
+  "sep": ";",
+  "encoding": "utf-8-sig"
+}

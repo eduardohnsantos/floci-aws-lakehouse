@@ -1,0 +1,10 @@
+{
+  "000000000000/group:us-east-1:default" : {
+    "name" : "default",
+    "arn" : "arn:aws:scheduler:us-east-1:000000000000:schedule-group/default",
+    "state" : "ACTIVE",
+    "creationDate" : "2026-10-02T20:44:31.854735675Z",
+    "lastModificationDate" : "2026-10-02T20:44:31.854735675Z",
+    "tags" : { }
+  }
+}

@@ -1,0 +1,63 @@
+title Lakehouse de eventos - AWS local com Floci
+direction right
+colorMode outline
+styleMode plain
+typeface clean
+
+Fonte externa {
+  ANP dados abertos [color: grey]
+}
+
+Analista de dados [icon: user, color: yellow, colorMode: bold]
+
+AWS Cloud [icon: aws, color: grey] {
+  Ingestão streaming [color: orange] {
+    S3 landing [icon: aws-simple-storage-service]
+    Lambda extração [icon: aws-lambda]
+    Kinesis [icon: aws-kinesis]
+    Firehose [icon: aws-kinesis-data-firehose]
+  }
+  Data Lake Medallion [color: blue] {
+    S3 bronze [icon: aws-simple-storage-service]
+    Lambda transformação [icon: aws-lambda]
+    S3 silver [icon: aws-simple-storage-service]
+    S3 gold [icon: aws-simple-storage-service]
+    S3 quarentena [icon: aws-simple-storage-service, color: red]
+  }
+  Consumo SQL [color: green] {
+    Glue Catalog [icon: aws-glue]
+    Athena [icon: aws-athena]
+  }
+  Orquestração [color: purple] {
+    EventBridge [icon: aws-eventbridge]
+    Step Functions [icon: aws-step-functions]
+  }
+  Observabilidade e alertas [color: teal] {
+    CloudWatch [icon: aws-cloudwatch]
+    SNS [icon: aws-sns]
+  }
+  Segurança e identidade [color: red] {
+    IAM role [icon: aws-identity-and-access-management]
+    KMS [icon: aws-key-management-service]
+  }
+}
+
+ANP dados abertos > S3 landing: 1
+S3 landing > Lambda extração: 2
+Lambda extração > Kinesis: 3
+Kinesis > Firehose: 4
+Firehose > S3 bronze: 5
+S3 bronze > Lambda transformação: 6
+Lambda transformação > S3 silver: 7a
+Lambda transformação > S3 quarentena: 7b [color: red]
+S3 silver > S3 gold: 8
+S3 gold > Glue Catalog: 9
+Glue Catalog > Athena: 10
+Athena > Analista de dados: 11 [color: yellow]
+
+EventBridge > Step Functions
+Orquestração --> Lambda extração: agenda
+Orquestração --> Lambda transformação: dispara
+Data Lake Medallion --> Observabilidade e alertas: logs e alertas
+CloudWatch > SNS
+Segurança e identidade --> Data Lake Medallion: permissões [color: red]

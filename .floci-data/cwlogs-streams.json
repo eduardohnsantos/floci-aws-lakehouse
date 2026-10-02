@@ -1,0 +1,82 @@
+{
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]68a6f494" : {
+    "logGroupName" : "/aws/lambda/lakehouse-transform",
+    "logStreamName" : "2026/10/02/[$LATEST]68a6f494",
+    "createdTime" : 1790909752374,
+    "firstEventTimestamp" : null,
+    "lastEventTimestamp" : null,
+    "lastIngestionTime" : 0,
+    "uploadSequenceToken" : "a0f23839-972b-4cd6-8acb-3c5dfc00c6bd",
+    "storedBytes" : 0
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-extract::2026/10/02/[$LATEST]5ab66a2f" : {
+    "logGroupName" : "/aws/lambda/lakehouse-extract",
+    "logStreamName" : "2026/10/02/[$LATEST]5ab66a2f",
+    "createdTime" : 1790909193749,
+    "firstEventTimestamp" : null,
+    "lastEventTimestamp" : null,
+    "lastIngestionTime" : 0,
+    "uploadSequenceToken" : "874d0755-b65e-4737-b150-8f8c36486d73",
+    "storedBytes" : 0
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-extract::2026/10/02/[$LATEST]656c3fd9" : {
+    "logGroupName" : "/aws/lambda/lakehouse-extract",
+    "logStreamName" : "2026/10/02/[$LATEST]656c3fd9",
+    "createdTime" : 1790910291683,
+    "firstEventTimestamp" : null,
+    "lastEventTimestamp" : null,
+    "lastIngestionTime" : 0,
+    "uploadSequenceToken" : "6df2614f-bfba-4135-a0c5-402b44be674d",
+    "storedBytes" : 0
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]b2eed47f" : {
+    "logGroupName" : "/aws/lambda/lakehouse-transform",
+    "logStreamName" : "2026/10/02/[$LATEST]b2eed47f",
+    "createdTime" : 1790973111934,
+    "firstEventTimestamp" : null,
+    "lastEventTimestamp" : null,
+    "lastIngestionTime" : 0,
+    "uploadSequenceToken" : "e102d9a6-a275-462f-a3cc-5c53c3277bad",
+    "storedBytes" : 0
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-extract::2026/10/02/[$LATEST]d5e4aaa1" : {
+    "logGroupName" : "/aws/lambda/lakehouse-extract",
+    "logStreamName" : "2026/10/02/[$LATEST]d5e4aaa1",
+    "createdTime" : 1790973631632,
+    "firstEventTimestamp" : null,
+    "lastEventTimestamp" : null,
+    "lastIngestionTime" : 0,
+    "uploadSequenceToken" : "fcc6c4cc-127f-4317-8c07-cb455f386ddb",
+    "storedBytes" : 0
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]cf4b8151" : {
+    "logGroupName" : "/aws/lambda/lakehouse-transform",
+    "logStreamName" : "2026/10/02/[$LATEST]cf4b8151",
+    "createdTime" : 1790973663689,
+    "firstEventTimestamp" : 1790973664228,
+    "lastEventTimestamp" : 1790973694252,
+    "lastIngestionTime" : 1790973694252,
+    "uploadSequenceToken" : "86c5f1da-f14b-4194-ae76-5241355391c3",
+    "storedBytes" : 522
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e" : {
+    "logGroupName" : "/aws/lambda/lakehouse-transform",
+    "logStreamName" : "2026/10/02/[$LATEST]bf9d924e",
+    "createdTime" : 1790910224085,
+    "firstEventTimestamp" : 1790910383462,
+    "lastEventTimestamp" : 1790910383484,
+    "lastIngestionTime" : 1790910383484,
+    "uploadSequenceToken" : "aea86550-bf6f-4562-992c-74ecd11057f4",
+    "storedBytes" : 3222
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-extract::2026/10/02/[$LATEST]dc63e32d" : {
+    "logGroupName" : "/aws/lambda/lakehouse-extract",
+    "logStreamName" : "2026/10/02/[$LATEST]dc63e32d",
+    "createdTime" : 1790973241456,
+    "firstEventTimestamp" : null,
+    "lastEventTimestamp" : null,
+    "lastIngestionTime" : 0,
+    "uploadSequenceToken" : "dbf8c9bb-2460-4958-a4fa-6eda42d679e0",
+    "storedBytes" : 0
+  }
+}

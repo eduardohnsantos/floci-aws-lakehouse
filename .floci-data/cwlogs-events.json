@@ -1,0 +1,268 @@
+{
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383478::24cba9ee-4881-404d-8c90-7b4d237982e6" : {
+    "eventId" : "24cba9ee-4881-404d-8c90-7b4d237982e6",
+    "timestamp" : 1790910383478,
+    "message" : "             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+    "ingestionTime" : 1790910383478,
+    "sequence" : 13
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383480::5399dcfa-103a-4014-b19f-60bbc726264c" : {
+    "eventId" : "5399dcfa-103a-4014-b19f-60bbc726264c",
+    "timestamp" : 1790910383480,
+    "message" : "  File \"/var/lang/lib/python3.12/site-packages/awslambdaric/lambda_runtime_client.py\", line 139, in _get_next",
+    "ingestionTime" : 1790910383480,
+    "sequence" : 19
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383483::5d9b021d-73ce-4b27-adb2-e3cf8f1ce5ec" : {
+    "eventId" : "5d9b021d-73ce-4b27-adb2-e3cf8f1ce5ec",
+    "timestamp" : 1790910383483,
+    "message" : "    event_request = lambda_runtime_client.wait_next_invocation()",
+    "ingestionTime" : 1790910383483,
+    "sequence" : 32
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383481::64da4e99-b313-4096-af30-d5878982556c" : {
+    "eventId" : "64da4e99-b313-4096-af30-d5878982556c",
+    "timestamp" : 1790910383481,
+    "message" : "Traceback (most recent call last):",
+    "ingestionTime" : 1790910383481,
+    "sequence" : 24
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383462::82112848-4a4c-4d49-a66a-6f9d16b0202c" : {
+    "eventId" : "82112848-4a4c-4d49-a66a-6f9d16b0202c",
+    "timestamp" : 1790910383462,
+    "message" : "Traceback (most recent call last):",
+    "ingestionTime" : 1790910383462,
+    "sequence" : 2
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383475::6ba28286-48d2-4cee-a455-8d0e15d9e18a" : {
+    "eventId" : "6ba28286-48d2-4cee-a455-8d0e15d9e18a",
+    "timestamp" : 1790910383475,
+    "message" : "    response_body, headers = future.result()",
+    "ingestionTime" : 1790910383475,
+    "sequence" : 4
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383483::954a3745-7d99-4fdf-89eb-b0f32a7614ae" : {
+    "eventId" : "954a3745-7d99-4fdf-89eb-b0f32a7614ae",
+    "timestamp" : 1790910383483,
+    "message" : "    bootstrap.run(handler, client)",
+    "ingestionTime" : 1790910383483,
+    "sequence" : 30
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383483::14ad7a95-f56e-46f8-a9e4-e3f1656b84dd" : {
+    "eventId" : "14ad7a95-f56e-46f8-a9e4-e3f1656b84dd",
+    "timestamp" : 1790910383483,
+    "message" : "  File \"/var/lang/lib/python3.12/site-packages/awslambdaric/bootstrap.py\", line 542, in run",
+    "ingestionTime" : 1790910383483,
+    "sequence" : 31
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383463::53aae847-184e-4234-9ef9-a244f1cd8c5a" : {
+    "eventId" : "53aae847-184e-4234-9ef9-a244f1cd8c5a",
+    "timestamp" : 1790910383463,
+    "message" : "  File \"/var/lang/lib/python3.12/site-packages/awslambdaric/lambda_runtime_client.py\", line 151, in wait_next_invocation",
+    "ingestionTime" : 1790910383463,
+    "sequence" : 3
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383482::22f537ba-134a-4333-bee2-957968fecb37" : {
+    "eventId" : "22f537ba-134a-4333-bee2-957968fecb37",
+    "timestamp" : 1790910383482,
+    "message" : "    main()",
+    "ingestionTime" : 1790910383482,
+    "sequence" : 26
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383482::7722e7ac-d4d6-457b-95c9-53cdc084fde6" : {
+    "eventId" : "7722e7ac-d4d6-457b-95c9-53cdc084fde6",
+    "timestamp" : 1790910383482,
+    "message" : "  File \"/var/runtime/bootstrap.py\", line 63, in <module>",
+    "ingestionTime" : 1790910383482,
+    "sequence" : 25
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383483::34c6ff2a-e193-4f9d-b4c9-d00b54fbc6c0" : {
+    "eventId" : "34c6ff2a-e193-4f9d-b4c9-d00b54fbc6c0",
+    "timestamp" : 1790910383483,
+    "message" : "  File \"/var/lang/lib/python3.12/site-packages/awslambdaric/__main__.py\", line 31, in main",
+    "ingestionTime" : 1790910383483,
+    "sequence" : 29
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383484::e6480a71-4f91-4d1d-8e09-80643bb720a5" : {
+    "eventId" : "e6480a71-4f91-4d1d-8e09-80643bb720a5",
+    "timestamp" : 1790910383484,
+    "message" : "awslambdaric.lambda_runtime_exception.FaultException: ('Runtime.LambdaRuntimeClientError', 'LAMBDA_RUNTIME Failed to get next invocation: Failed to get next', None)",
+    "ingestionTime" : 1790910383484,
+    "sequence" : 36
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383484::dfafba79-6efe-4e9d-9431-efd2371f9371" : {
+    "eventId" : "dfafba79-6efe-4e9d-9431-efd2371f9371",
+    "timestamp" : 1790910383484,
+    "message" : "                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+    "ingestionTime" : 1790910383484,
+    "sequence" : 33
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383484::8a96ae28-ebaf-4d10-8b15-99e8430d533e" : {
+    "eventId" : "8a96ae28-ebaf-4d10-8b15-99e8430d533e",
+    "timestamp" : 1790910383484,
+    "message" : "    raise FaultException(",
+    "ingestionTime" : 1790910383484,
+    "sequence" : 35
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383484::e09a671b-ace4-42ba-b1bc-f1d08c0e19c8" : {
+    "eventId" : "e09a671b-ace4-42ba-b1bc-f1d08c0e19c8",
+    "timestamp" : 1790910383484,
+    "message" : "  File \"/var/lang/lib/python3.12/site-packages/awslambdaric/lambda_runtime_client.py\", line 153, in wait_next_invocation",
+    "ingestionTime" : 1790910383484,
+    "sequence" : 34
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383479::e9223f11-8571-4ee7-b8cd-34c8685c6cf8" : {
+    "eventId" : "e9223f11-8571-4ee7-b8cd-34c8685c6cf8",
+    "timestamp" : 1790910383479,
+    "message" : "  File \"/var/lang/lib/python3.12/site-packages/awslambdaric/lambda_runtime_client.py\", line 211, in handle_exception",
+    "ingestionTime" : 1790910383479,
+    "sequence" : 17
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383481::17d17867-6653-4329-aeae-baece5462638" : {
+    "eventId" : "17d17867-6653-4329-aeae-baece5462638",
+    "timestamp" : 1790910383481,
+    "message" : "           ^^^^^^^^^^^^^^^^^^^^^",
+    "ingestionTime" : 1790910383481,
+    "sequence" : 21
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383482::5aac9e1f-11e0-4d19-ac51-80927c89fdee" : {
+    "eventId" : "5aac9e1f-11e0-4d19-ac51-80927c89fdee",
+    "timestamp" : 1790910383482,
+    "message" : "    awslambdaricmain.main([os.environ[\"LAMBDA_TASK_ROOT\"], os.environ[\"_HANDLER\"]])",
+    "ingestionTime" : 1790910383482,
+    "sequence" : 28
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383476::13eb56f0-008d-4c68-b1f6-8243abedfcf8" : {
+    "eventId" : "13eb56f0-008d-4c68-b1f6-8243abedfcf8",
+    "timestamp" : 1790910383476,
+    "message" : "           ^^^^^^^^^^^^^^^^^^^",
+    "ingestionTime" : 1790910383476,
+    "sequence" : 8
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383478::737d5597-8fdb-446d-80bf-f1a694a7c10b" : {
+    "eventId" : "737d5597-8fdb-446d-80bf-f1a694a7c10b",
+    "timestamp" : 1790910383478,
+    "message" : "  File \"/var/lang/lib/python3.12/site-packages/awslambdaric/lambda_runtime_client.py\", line 141, in _get_next",
+    "ingestionTime" : 1790910383478,
+    "sequence" : 14
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383478::73577f46-d5d9-419b-bcd7-22a409476f0f" : {
+    "eventId" : "73577f46-d5d9-419b-bcd7-22a409476f0f",
+    "timestamp" : 1790910383478,
+    "message" : "    return self.handle_exception(e, runtime_client.next, True)",
+    "ingestionTime" : 1790910383479,
+    "sequence" : 15
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383476::d9b260f6-044d-4872-a8ea-22938c28454e" : {
+    "eventId" : "d9b260f6-044d-4872-a8ea-22938c28454e",
+    "timestamp" : 1790910383476,
+    "message" : "  File \"/var/lang/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result",
+    "ingestionTime" : 1790910383476,
+    "sequence" : 9
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383480::e0d4777d-2c58-4074-a63f-cc5e8e688135" : {
+    "eventId" : "e0d4777d-2c58-4074-a63f-cc5e8e688135",
+    "timestamp" : 1790910383480,
+    "message" : "    return runtime_client.next()",
+    "ingestionTime" : 1790910383480,
+    "sequence" : 20
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]cf4b8151::001790973664228::396f57dc-b27c-49de-83db-6f8b09576455" : {
+    "eventId" : "396f57dc-b27c-49de-83db-6f8b09576455",
+    "timestamp" : 1790973664228,
+    "message" : "[ERROR] RuntimeError: bronze is empty: no records to process yet\rTraceback (most recent call last):\r  File \"/var/task/lakehouse/handler.py\", line 74, in handler\r    raise RuntimeError(\"bronze is empty: no records to process yet\")",
+    "ingestionTime" : 1790973664228,
+    "sequence" : 37
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383475::46dc0117-f7e7-4f7a-85c7-e18ea680a473" : {
+    "eventId" : "46dc0117-f7e7-4f7a-85c7-e18ea680a473",
+    "timestamp" : 1790910383475,
+    "message" : "                             ^^^^^^^^^^^^^^^",
+    "ingestionTime" : 1790910383475,
+    "sequence" : 5
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383462::13886b95-f176-4785-9f55-8e8fc984fe75" : {
+    "eventId" : "13886b95-f176-4785-9f55-8e8fc984fe75",
+    "timestamp" : 1790910383462,
+    "message" : "[ERROR] [1790910383460] LAMBDA_RUNTIME Failed to get next invocation. No Response from endpoint",
+    "ingestionTime" : 1790910383462,
+    "sequence" : 1
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383477::602e95cd-3e1e-4e25-bef0-6ccb87be7050" : {
+    "eventId" : "602e95cd-3e1e-4e25-bef0-6ccb87be7050",
+    "timestamp" : 1790910383477,
+    "message" : "  File \"/var/lang/lib/python3.12/concurrent/futures/thread.py\", line 59, in run",
+    "ingestionTime" : 1790910383477,
+    "sequence" : 11
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383481::c52abd1f-0440-48c8-9527-764b7a23b1ed" : {
+    "eventId" : "c52abd1f-0440-48c8-9527-764b7a23b1ed",
+    "timestamp" : 1790910383481,
+    "message" : "RuntimeError: Failed to get next",
+    "ingestionTime" : 1790910383481,
+    "sequence" : 22
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383482::b1ec35ab-ce87-43f0-89e2-8ade891b7eb4" : {
+    "eventId" : "b1ec35ab-ce87-43f0-89e2-8ade891b7eb4",
+    "timestamp" : 1790910383482,
+    "message" : "  File \"/var/runtime/bootstrap.py\", line 60, in main",
+    "ingestionTime" : 1790910383482,
+    "sequence" : 27
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383475::5e186e02-ddcd-4c18-a73a-24da668e4fea" : {
+    "eventId" : "5e186e02-ddcd-4c18-a73a-24da668e4fea",
+    "timestamp" : 1790910383475,
+    "message" : "  File \"/var/lang/lib/python3.12/concurrent/futures/_base.py\", line 449, in result",
+    "ingestionTime" : 1790910383476,
+    "sequence" : 6
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383479::e34f55d6-aa00-4eb6-8507-200fb8a64bd3" : {
+    "eventId" : "e34f55d6-aa00-4eb6-8507-200fb8a64bd3",
+    "timestamp" : 1790910383479,
+    "message" : "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+    "ingestionTime" : 1790910383479,
+    "sequence" : 16
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383476::3a561baf-80e1-4baf-acd3-2f94fb7ce353" : {
+    "eventId" : "3a561baf-80e1-4baf-acd3-2f94fb7ce353",
+    "timestamp" : 1790910383476,
+    "message" : "    raise self._exception",
+    "ingestionTime" : 1790910383476,
+    "sequence" : 10
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383477::fc818732-0c28-4d6d-aff0-08603e45e6a6" : {
+    "eventId" : "fc818732-0c28-4d6d-aff0-08603e45e6a6",
+    "timestamp" : 1790910383477,
+    "message" : "    result = self.fn(*self.args, **self.kwargs)",
+    "ingestionTime" : 1790910383477,
+    "sequence" : 12
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383481::1728a9f6-6f8c-452b-9b85-3aeccfb6c8ab" : {
+    "eventId" : "1728a9f6-6f8c-452b-9b85-3aeccfb6c8ab",
+    "timestamp" : 1790910383481,
+    "message" : "During handling of the above exception, another exception occurred:",
+    "ingestionTime" : 1790910383481,
+    "sequence" : 23
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]cf4b8151::001790973694252::ddb4a378-0d4e-4966-b52d-23e274bec0ea" : {
+    "eventId" : "ddb4a378-0d4e-4966-b52d-23e274bec0ea",
+    "timestamp" : 1790973694252,
+    "message" : "[ERROR] RuntimeError: bronze is empty: no records to process yet\rTraceback (most recent call last):\r  File \"/var/task/lakehouse/handler.py\", line 74, in handler\r    raise RuntimeError(\"bronze is empty: no records to process yet\")",
+    "ingestionTime" : 1790973694252,
+    "sequence" : 38
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383476::c66bb49a-c1d5-4a45-a057-e79b0c6afaa6" : {
+    "eventId" : "c66bb49a-c1d5-4a45-a057-e79b0c6afaa6",
+    "timestamp" : 1790910383476,
+    "message" : "    return self.__get_result()",
+    "ingestionTime" : 1790910383476,
+    "sequence" : 7
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383479::4c0b5cb6-49d3-4dd0-897f-50b6fe1ea5b0" : {
+    "eventId" : "4c0b5cb6-49d3-4dd0-897f-50b6fe1ea5b0",
+    "timestamp" : 1790910383479,
+    "message" : "    raise exc",
+    "ingestionTime" : 1790910383479,
+    "sequence" : 18
+  }
+}

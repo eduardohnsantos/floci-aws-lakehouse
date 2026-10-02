@@ -1,0 +1,18 @@
+{
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform" : {
+    "logGroupName" : "/aws/lambda/lakehouse-transform",
+    "createdTime" : 1790909752374,
+    "retentionInDays" : null,
+    "deletionProtectionEnabled" : false,
+    "kmsKeyId" : null,
+    "tags" : { }
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-extract" : {
+    "logGroupName" : "/aws/lambda/lakehouse-extract",
+    "createdTime" : 1790909193749,
+    "retentionInDays" : null,
+    "deletionProtectionEnabled" : false,
+    "kmsKeyId" : null,
+    "tags" : { }
+  }
+}

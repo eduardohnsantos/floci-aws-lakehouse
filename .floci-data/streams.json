@@ -1,0 +1,54 @@
+{
+  "000000000000/us-east-1/anp-to-bronze" : {
+    "accountId" : "000000000000",
+    "DeliveryStreamName" : "anp-to-bronze",
+    "DeliveryStreamARN" : "arn:aws:firehose:us-east-1:000000000000:deliverystream/anp-to-bronze",
+    "DeliveryStreamStatus" : "ACTIVE",
+    "DeliveryStreamType" : "KinesisStreamAsSource",
+    "VersionId" : "1",
+    "HasMoreDestinations" : false,
+    "CreateTimestamp" : 1790908604.063362450,
+    "Destinations" : [ {
+      "DestinationId" : "destinationId-000000000001",
+      "ExtendedS3DestinationDescription" : {
+        "RoleARN" : "arn:aws:iam::000000000000:role/lakehouse-role",
+        "BucketARN" : "arn:aws:s3:::lakehouse-bronze",
+        "Prefix" : "anp/",
+        "CompressionFormat" : "UNCOMPRESSED",
+        "BufferingHints" : {
+          "SizeInMBs" : 1,
+          "IntervalInSeconds" : 60
+        },
+        "EncryptionConfiguration" : {
+          "NoEncryptionConfig" : "NoEncryption"
+        },
+        "S3BackupMode" : "Disabled"
+      },
+      "S3DestinationDescription" : {
+        "RoleARN" : "arn:aws:iam::000000000000:role/lakehouse-role",
+        "BucketARN" : "arn:aws:s3:::lakehouse-bronze",
+        "Prefix" : "anp/",
+        "CompressionFormat" : "UNCOMPRESSED",
+        "BufferingHints" : {
+          "SizeInMBs" : 1,
+          "IntervalInSeconds" : 60
+        },
+        "EncryptionConfiguration" : {
+          "NoEncryptionConfig" : "NoEncryption"
+        }
+      }
+    } ],
+    "Source" : {
+      "KinesisStreamSourceDescription" : {
+        "KinesisStreamARN" : "arn:aws:kinesis:us-east-1:000000000000:stream/anp-events",
+        "RoleARN" : "arn:aws:iam::000000000000:role/lakehouse-role",
+        "DeliveryStartTimestamp" : 1790908604.063361750
+      }
+    },
+    "Tags" : [ ],
+    "DeliveryStreamEncryptionConfiguration" : {
+      "KeyType" : "AWS_OWNED_CMK",
+      "Status" : "DISABLED"
+    }
+  }
+}

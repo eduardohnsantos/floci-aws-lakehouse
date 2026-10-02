@@ -1,0 +1,5 @@
+{
+  "Arn": "arn:aws:states:us-east-1:000000000000:stateMachine:lakehouse-pipeline",
+  "RoleArn": "arn:aws:iam::000000000000:role/lakehouse-role",
+  "Input": "{\"bucket\":\"lakehouse-landing\",\"key\":\"anp/anp_sample.csv\",\"offset\":0,\"limit\":1000,\"fault_rate\":0.05,\"sep\":\";\",\"encoding\":\"utf-8-sig\"}"
+}

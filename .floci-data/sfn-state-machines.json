@@ -1,0 +1,30 @@
+{
+  "000000000000/arn:aws:states:us-east-1:000000000000:stateMachine:lakehouse-pipeline" : {
+    "stateMachineArn" : "arn:aws:states:us-east-1:000000000000:stateMachine:lakehouse-pipeline",
+    "name" : "lakehouse-pipeline",
+    "definition" : "{\n  \"Comment\": \"Extract (chunked loop) -> wait -> transform with retries, alert on failure\",\n  \"StartAt\": \"Extract\",\n  \"States\": {\n    \"Extract\": {\n      \"Type\": \"Task\",\n      \"Resource\": \"arn:aws:states:::lambda:invoke\",\n      \"Parameters\": {\n        \"FunctionName\": \"lakehouse-extract\",\n        \"Payload.$\": \"$\"\n      },\n      \"OutputPath\": \"$.Payload\",\n      \"Retry\": [\n        {\n          \"ErrorEquals\": [\"States.ALL\"],\n          \"IntervalSeconds\": 5,\n          \"MaxAttempts\": 2,\n          \"BackoffRate\": 2\n        }\n      ],\n      \"Catch\": [{ \"ErrorEquals\": [\"States.ALL\"], \"Next\": \"NotifyFailure\" }],\n      \"Next\": \"MoreRows\"\n    },\n    \"MoreRows\": {\n      \"Type\": \"Choice\",\n      \"Choices\": [\n        { \"Variable\": \"$.done\", \"BooleanEquals\": true, \"Next\": \"WaitForFirehose\" }\n      ],\n      \"Default\": \"Extract\"\n    },\n    \"WaitForFirehose\": {\n      \"Type\": \"Wait\",\n      \"Seconds\": 60,\n      \"Next\": \"Transform\"\n    },\n    \"Transform\": {\n      \"Type\": \"Task\",\n      \"Resource\": \"arn:aws:states:::lambda:invoke\",\n      \"Parameters\": {\n        \"FunctionName\": \"lakehouse-transform\",\n        \"Payload\": { \"bucket\": \"lakehouse-bronze\", \"prefix\": \"anp/\" }\n      },\n      \"OutputPath\": \"$.Payload\",\n      \"Retry\": [\n        {\n          \"ErrorEquals\": [\"States.ALL\"],\n          \"IntervalSeconds\": 30,\n          \"MaxAttempts\": 6,\n          \"BackoffRate\": 1.0\n        }\n      ],\n      \"Catch\": [{ \"ErrorEquals\": [\"States.ALL\"], \"Next\": \"NotifyFailure\" }],\n      \"End\": true\n    },\n    \"NotifyFailure\": {\n      \"Type\": \"Task\",\n      \"Resource\": \"arn:aws:states:::sns:publish\",\n      \"Parameters\": {\n        \"TopicArn\": \"arn:aws:sns:us-east-1:000000000000:pipeline-alerts\",\n        \"Message.$\": \"States.JsonToString($)\"\n      },\n      \"End\": true\n    }\n  }\n}",
+    "roleArn" : "arn:aws:iam::000000000000:role/lakehouse-role",
+    "type" : "STANDARD",
+    "status" : "ACTIVE",
+    "creationDate" : 1.790910288374E9,
+    "updateDate" : 1.790973625543E9,
+    "revisionId" : "9a618031-9158-446f-849c-d9be12bfbdf3",
+    "description" : null,
+    "loggingConfiguration" : {
+      "level" : "OFF",
+      "includeExecutionData" : false,
+      "destinations" : [ ]
+    },
+    "tracingConfiguration" : {
+      "enabled" : false
+    },
+    "encryptionConfiguration" : {
+      "type" : "AWS_OWNED_KEY"
+    },
+    "tags" : { },
+    "creationVersionArn" : null,
+    "creationVersionDescription" : null,
+    "versionCounter" : 0,
+    "versions" : [ ]
+  }
+}
