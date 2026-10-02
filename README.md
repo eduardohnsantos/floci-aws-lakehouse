@@ -3,7 +3,7 @@
 A Medallion-style data pipeline (bronze / silver / gold) built on AWS services
 emulated locally with [Floci](https://github.com/floci-io/floci): no AWS account, no cost.
 
-![Architecture](docs/architecture.png)
+![Architecture](docs/architecture-animated.svg)
 
 > Diagram source: `docs/architecture.eraserdiagram` (Eraser diagram-as-code).
 
