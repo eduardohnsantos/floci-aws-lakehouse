@@ -1,4 +1,697 @@
 {
+  "000000000000/arn:aws:states:us-east-1:000000000000:execution:lakehouse-pipeline:954992b1-781f-4589-8c83-eec991ac92cc" : {
+    "executionArn" : "arn:aws:states:us-east-1:000000000000:execution:lakehouse-pipeline:954992b1-781f-4589-8c83-eec991ac92cc",
+    "stateMachineArn" : "arn:aws:states:us-east-1:000000000000:stateMachine:lakehouse-pipeline",
+    "stateMachineVersionArn" : null,
+    "stateMachineAliasArn" : null,
+    "name" : "954992b1-781f-4589-8c83-eec991ac92cc",
+    "status" : "SUCCEEDED",
+    "input" : "{\n  \"bucket\": \"lakehouse-landing\",\n  \"key\": \"anp/anp_sample.csv\",\n  \"offset\": 0,\n  \"limit\": 1000,\n  \"fault_rate\": 0.05,\n  \"sep\": \";\",\n  \"encoding\": \"utf-8-sig\"\n}\n",
+    "output" : "{\"MessageId\":\"10027a44-0a39-40a6-a939-a22b98b116de\"}",
+    "startDate" : 1.790975628668E9,
+    "stopDate" : 1.79097574409E9,
+    "error" : null,
+    "cause" : null,
+    "history" : [ {
+      "id" : 1,
+      "timestamp" : 1.790975628668E9,
+      "type" : "ExecutionStarted",
+      "previousEventId" : 0,
+      "details" : {
+        "inputDetails" : {
+          "truncated" : false
+        },
+        "roleArn" : "arn:aws:iam::000000000000:role/lakehouse-role",
+        "input" : "{\n  \"bucket\": \"lakehouse-landing\",\n  \"key\": \"anp/anp_sample.csv\",\n  \"offset\": 0,\n  \"limit\": 1000,\n  \"fault_rate\": 0.05,\n  \"sep\": \";\",\n  \"encoding\": \"utf-8-sig\"\n}\n"
+      }
+    }, {
+      "id" : 2,
+      "timestamp" : 1.790975628669E9,
+      "type" : "TaskStateEntered",
+      "previousEventId" : 0,
+      "details" : {
+        "inputDetails" : {
+          "truncated" : false
+        },
+        "name" : "Extract",
+        "input" : "{\"bucket\":\"lakehouse-landing\",\"key\":\"anp/anp_sample.csv\",\"offset\":0,\"limit\":1000,\"fault_rate\":0.05,\"sep\":\";\",\"encoding\":\"utf-8-sig\"}"
+      }
+    }, {
+      "id" : 3,
+      "timestamp" : 1.790975628669E9,
+      "type" : "TaskScheduled",
+      "previousEventId" : 2,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke",
+        "region" : "us-east-1",
+        "parameters" : "{\"FunctionName\":\"lakehouse-extract\",\"Payload\":{\"bucket\":\"lakehouse-landing\",\"key\":\"anp/anp_sample.csv\",\"offset\":0,\"limit\":1000,\"fault_rate\":0.05,\"sep\":\";\",\"encoding\":\"utf-8-sig\"}}"
+      }
+    }, {
+      "id" : 4,
+      "timestamp" : 1.790975628669E9,
+      "type" : "TaskStarted",
+      "previousEventId" : 3,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke"
+      }
+    }, {
+      "id" : 5,
+      "timestamp" : 1.790975631248E9,
+      "type" : "TaskSucceeded",
+      "previousEventId" : 4,
+      "details" : {
+        "outputDetails" : {
+          "truncated" : false
+        },
+        "output" : "{\"ExecutedVersion\":\"$LATEST\",\"Payload\":{\"bucket\":\"lakehouse-landing\",\"key\":\"anp/anp_sample.csv\",\"offset\":5,\"limit\":1000,\"fault_rate\":0.05,\"sep\":\";\",\"encoding\":\"utf-8-sig\",\"sent\":5,\"done\":true},\"StatusCode\":200}",
+        "resourceType" : "lambda",
+        "resource" : "invoke"
+      }
+    }, {
+      "id" : 6,
+      "timestamp" : 1.790975631248E9,
+      "type" : "TaskStateExited",
+      "previousEventId" : 5,
+      "details" : {
+        "output" : "{\"bucket\":\"lakehouse-landing\",\"key\":\"anp/anp_sample.csv\",\"offset\":5,\"limit\":1000,\"fault_rate\":0.05,\"sep\":\";\",\"encoding\":\"utf-8-sig\",\"sent\":5,\"done\":true}",
+        "outputDetails" : {
+          "truncated" : false
+        },
+        "name" : "Extract"
+      }
+    }, {
+      "id" : 7,
+      "timestamp" : 1.790975631248E9,
+      "type" : "ChoiceStateEntered",
+      "previousEventId" : 6,
+      "details" : {
+        "inputDetails" : {
+          "truncated" : false
+        },
+        "name" : "MoreRows",
+        "input" : "{\"bucket\":\"lakehouse-landing\",\"key\":\"anp/anp_sample.csv\",\"offset\":5,\"limit\":1000,\"fault_rate\":0.05,\"sep\":\";\",\"encoding\":\"utf-8-sig\",\"sent\":5,\"done\":true}"
+      }
+    }, {
+      "id" : 8,
+      "timestamp" : 1.790975631248E9,
+      "type" : "ChoiceStateExited",
+      "previousEventId" : 7,
+      "details" : {
+        "output" : "{\"bucket\":\"lakehouse-landing\",\"key\":\"anp/anp_sample.csv\",\"offset\":5,\"limit\":1000,\"fault_rate\":0.05,\"sep\":\";\",\"encoding\":\"utf-8-sig\",\"sent\":5,\"done\":true}",
+        "outputDetails" : {
+          "truncated" : false
+        },
+        "name" : "MoreRows"
+      }
+    }, {
+      "id" : 9,
+      "timestamp" : 1.790975631248E9,
+      "type" : "WaitStateEntered",
+      "previousEventId" : 8,
+      "details" : {
+        "inputDetails" : {
+          "truncated" : false
+        },
+        "name" : "WaitForFirehose",
+        "input" : "{\"bucket\":\"lakehouse-landing\",\"key\":\"anp/anp_sample.csv\",\"offset\":5,\"limit\":1000,\"fault_rate\":0.05,\"sep\":\";\",\"encoding\":\"utf-8-sig\",\"sent\":5,\"done\":true}"
+      }
+    }, {
+      "id" : 10,
+      "timestamp" : 1.790975661246E9,
+      "type" : "WaitStateExited",
+      "previousEventId" : 9,
+      "details" : {
+        "output" : "{\"bucket\":\"lakehouse-landing\",\"key\":\"anp/anp_sample.csv\",\"offset\":5,\"limit\":1000,\"fault_rate\":0.05,\"sep\":\";\",\"encoding\":\"utf-8-sig\",\"sent\":5,\"done\":true}",
+        "outputDetails" : {
+          "truncated" : false
+        },
+        "name" : "WaitForFirehose"
+      }
+    }, {
+      "id" : 11,
+      "timestamp" : 1.790975661246E9,
+      "type" : "TaskStateEntered",
+      "previousEventId" : 10,
+      "details" : {
+        "inputDetails" : {
+          "truncated" : false
+        },
+        "name" : "Transform",
+        "input" : "{\"bucket\":\"lakehouse-landing\",\"key\":\"anp/anp_sample.csv\",\"offset\":5,\"limit\":1000,\"fault_rate\":0.05,\"sep\":\";\",\"encoding\":\"utf-8-sig\",\"sent\":5,\"done\":true}"
+      }
+    }, {
+      "id" : 12,
+      "timestamp" : 1.790975661246E9,
+      "type" : "TaskScheduled",
+      "previousEventId" : 11,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke",
+        "region" : "us-east-1",
+        "parameters" : "{\"FunctionName\":\"lakehouse-transform\",\"Payload\":{\"bucket\":\"lakehouse-bronze\",\"prefix\":\"anp/\"}}"
+      }
+    }, {
+      "id" : 13,
+      "timestamp" : 1.790975661246E9,
+      "type" : "TaskStarted",
+      "previousEventId" : 12,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke"
+      }
+    }, {
+      "id" : 14,
+      "timestamp" : 1.790975662765E9,
+      "type" : "TaskFailed",
+      "previousEventId" : 13,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke",
+        "error" : "RuntimeError",
+        "cause" : "{\"errorMessage\": \"bronze is empty: no records to process yet\", \"errorType\": \"RuntimeError\", \"requestId\": \"aa45b785-2c60-438b-90e4-b526801157aa\", \"stackTrace\": [\"  File \\\"/var/task/lakehouse/handler.py\\\", line 74, in handler\\n    raise RuntimeError(\\\"bronze is empty: no records to process yet\\\")\\n\"]}"
+      }
+    }, {
+      "id" : 15,
+      "timestamp" : 1.790975692763E9,
+      "type" : "TaskScheduled",
+      "previousEventId" : 14,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke",
+        "region" : "us-east-1",
+        "parameters" : "{\"FunctionName\":\"lakehouse-transform\",\"Payload\":{\"bucket\":\"lakehouse-bronze\",\"prefix\":\"anp/\"}}"
+      }
+    }, {
+      "id" : 16,
+      "timestamp" : 1.790975692763E9,
+      "type" : "TaskStarted",
+      "previousEventId" : 15,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke"
+      }
+    }, {
+      "id" : 17,
+      "timestamp" : 1.790975692786E9,
+      "type" : "TaskFailed",
+      "previousEventId" : 16,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke",
+        "error" : "RuntimeError",
+        "cause" : "{\"errorMessage\": \"bronze is empty: no records to process yet\", \"errorType\": \"RuntimeError\", \"requestId\": \"86346298-821a-4f61-b782-231a7f6ec8e3\", \"stackTrace\": [\"  File \\\"/var/task/lakehouse/handler.py\\\", line 74, in handler\\n    raise RuntimeError(\\\"bronze is empty: no records to process yet\\\")\\n\"]}"
+      }
+    }, {
+      "id" : 18,
+      "timestamp" : 1.790975722784E9,
+      "type" : "TaskScheduled",
+      "previousEventId" : 17,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke",
+        "region" : "us-east-1",
+        "parameters" : "{\"FunctionName\":\"lakehouse-transform\",\"Payload\":{\"bucket\":\"lakehouse-bronze\",\"prefix\":\"anp/\"}}"
+      }
+    }, {
+      "id" : 19,
+      "timestamp" : 1.790975722784E9,
+      "type" : "TaskStarted",
+      "previousEventId" : 18,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke"
+      }
+    }, {
+      "id" : 20,
+      "timestamp" : 1.790975722846E9,
+      "type" : "TaskSucceeded",
+      "previousEventId" : 19,
+      "details" : {
+        "outputDetails" : {
+          "truncated" : false
+        },
+        "output" : "{\"ExecutedVersion\":\"$LATEST\",\"Payload\":{\"valid\":5,\"rejected\":0,\"duplicates\":0},\"StatusCode\":200}",
+        "resourceType" : "lambda",
+        "resource" : "invoke"
+      }
+    }, {
+      "id" : 21,
+      "timestamp" : 1.790975722846E9,
+      "type" : "TaskStateExited",
+      "previousEventId" : 20,
+      "details" : {
+        "output" : "{\"valid\":5,\"rejected\":0,\"duplicates\":0}",
+        "outputDetails" : {
+          "truncated" : false
+        },
+        "name" : "Transform"
+      }
+    }, {
+      "id" : 22,
+      "timestamp" : 1.790975722846E9,
+      "type" : "TaskStateEntered",
+      "previousEventId" : 21,
+      "details" : {
+        "inputDetails" : {
+          "truncated" : false
+        },
+        "name" : "Aggregate",
+        "input" : "{\"valid\":5,\"rejected\":0,\"duplicates\":0}"
+      }
+    }, {
+      "id" : 23,
+      "timestamp" : 1.790975722846E9,
+      "type" : "TaskScheduled",
+      "previousEventId" : 22,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke",
+        "region" : "us-east-1",
+        "parameters" : "{\"FunctionName\":\"lakehouse-aggregate\",\"Payload\":{\"valid\":5,\"rejected\":0,\"duplicates\":0}}"
+      }
+    }, {
+      "id" : 24,
+      "timestamp" : 1.790975722846E9,
+      "type" : "TaskStarted",
+      "previousEventId" : 23,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke"
+      }
+    }, {
+      "id" : 25,
+      "timestamp" : 1.790975724654E9,
+      "type" : "TaskFailed",
+      "previousEventId" : 24,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke",
+        "error" : "Runtime.HandlerNotFound",
+        "cause" : "{\"errorMessage\": \"Handler 'handler' missing on module 'lakehouse.aggregate'\", \"errorType\": \"Runtime.HandlerNotFound\", \"requestId\": \"\", \"stackTrace\": []}"
+      }
+    }, {
+      "id" : 26,
+      "timestamp" : 1.790975729654E9,
+      "type" : "TaskScheduled",
+      "previousEventId" : 25,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke",
+        "region" : "us-east-1",
+        "parameters" : "{\"FunctionName\":\"lakehouse-aggregate\",\"Payload\":{\"valid\":5,\"rejected\":0,\"duplicates\":0}}"
+      }
+    }, {
+      "id" : 27,
+      "timestamp" : 1.790975729654E9,
+      "type" : "TaskStarted",
+      "previousEventId" : 26,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke"
+      }
+    }, {
+      "id" : 28,
+      "timestamp" : 1.790975731957E9,
+      "type" : "TaskFailed",
+      "previousEventId" : 27,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke",
+        "error" : "Runtime.HandlerNotFound",
+        "cause" : "{\"errorMessage\": \"Handler 'handler' missing on module 'lakehouse.aggregate'\", \"errorType\": \"Runtime.HandlerNotFound\", \"requestId\": \"\", \"stackTrace\": []}"
+      }
+    }, {
+      "id" : 29,
+      "timestamp" : 1.790975741957E9,
+      "type" : "TaskScheduled",
+      "previousEventId" : 28,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke",
+        "region" : "us-east-1",
+        "parameters" : "{\"FunctionName\":\"lakehouse-aggregate\",\"Payload\":{\"valid\":5,\"rejected\":0,\"duplicates\":0}}"
+      }
+    }, {
+      "id" : 30,
+      "timestamp" : 1.790975741957E9,
+      "type" : "TaskStarted",
+      "previousEventId" : 29,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke"
+      }
+    }, {
+      "id" : 31,
+      "timestamp" : 1.79097574409E9,
+      "type" : "TaskFailed",
+      "previousEventId" : 30,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke",
+        "error" : "Runtime.HandlerNotFound",
+        "cause" : "{\"errorMessage\": \"Handler 'handler' missing on module 'lakehouse.aggregate'\", \"errorType\": \"Runtime.HandlerNotFound\", \"requestId\": \"\", \"stackTrace\": []}"
+      }
+    }, {
+      "id" : 32,
+      "timestamp" : 1.79097574409E9,
+      "type" : "TaskStateExited",
+      "previousEventId" : 31,
+      "details" : {
+        "output" : "{\"Error\":\"Runtime.HandlerNotFound\",\"Cause\":\"{\\\"errorMessage\\\": \\\"Handler 'handler' missing on module 'lakehouse.aggregate'\\\", \\\"errorType\\\": \\\"Runtime.HandlerNotFound\\\", \\\"requestId\\\": \\\"\\\", \\\"stackTrace\\\": []}\"}",
+        "outputDetails" : {
+          "truncated" : false
+        },
+        "name" : "Aggregate"
+      }
+    }, {
+      "id" : 33,
+      "timestamp" : 1.79097574409E9,
+      "type" : "TaskStateEntered",
+      "previousEventId" : 32,
+      "details" : {
+        "inputDetails" : {
+          "truncated" : false
+        },
+        "name" : "NotifyFailure",
+        "input" : "{\"Error\":\"Runtime.HandlerNotFound\",\"Cause\":\"{\\\"errorMessage\\\": \\\"Handler 'handler' missing on module 'lakehouse.aggregate'\\\", \\\"errorType\\\": \\\"Runtime.HandlerNotFound\\\", \\\"requestId\\\": \\\"\\\", \\\"stackTrace\\\": []}\"}"
+      }
+    }, {
+      "id" : 34,
+      "timestamp" : 1.79097574409E9,
+      "type" : "TaskScheduled",
+      "previousEventId" : 33,
+      "details" : {
+        "resourceType" : "sns",
+        "resource" : "publish",
+        "region" : "us-east-1",
+        "parameters" : "{\"TopicArn\":\"arn:aws:sns:us-east-1:000000000000:pipeline-alerts\",\"Message\":\"{\\\"Error\\\":\\\"Runtime.HandlerNotFound\\\",\\\"Cause\\\":\\\"{\\\\\\\"errorMessage\\\\\\\": \\\\\\\"Handler 'handler' missing on module 'lakehouse.aggregate'\\\\\\\", \\\\\\\"errorType\\\\\\\": \\\\\\\"Runtime.HandlerNotFound\\\\\\\", \\\\\\\"requestId\\\\\\\": \\\\\\\"\\\\\\\", \\\\\\\"stackTrace\\\\\\\": []}\\\"}\"}"
+      }
+    }, {
+      "id" : 35,
+      "timestamp" : 1.79097574409E9,
+      "type" : "TaskStarted",
+      "previousEventId" : 34,
+      "details" : {
+        "resourceType" : "sns",
+        "resource" : "publish"
+      }
+    }, {
+      "id" : 36,
+      "timestamp" : 1.79097574409E9,
+      "type" : "TaskSucceeded",
+      "previousEventId" : 35,
+      "details" : {
+        "outputDetails" : {
+          "truncated" : false
+        },
+        "output" : "{\"MessageId\":\"10027a44-0a39-40a6-a939-a22b98b116de\"}",
+        "resourceType" : "sns",
+        "resource" : "publish"
+      }
+    }, {
+      "id" : 37,
+      "timestamp" : 1.79097574409E9,
+      "type" : "TaskStateExited",
+      "previousEventId" : 36,
+      "details" : {
+        "output" : "{\"MessageId\":\"10027a44-0a39-40a6-a939-a22b98b116de\"}",
+        "outputDetails" : {
+          "truncated" : false
+        },
+        "name" : "NotifyFailure"
+      }
+    }, {
+      "id" : 38,
+      "timestamp" : 1.79097574409E9,
+      "type" : "ExecutionSucceeded",
+      "previousEventId" : 37,
+      "details" : {
+        "outputDetails" : {
+          "truncated" : false
+        },
+        "output" : "{\"MessageId\":\"10027a44-0a39-40a6-a939-a22b98b116de\"}"
+      }
+    } ]
+  },
+  "000000000000/arn:aws:states:us-east-1:000000000000:execution:lakehouse-pipeline:f23d0f8c-23d4-48ce-81eb-0a4da3aff258" : {
+    "executionArn" : "arn:aws:states:us-east-1:000000000000:execution:lakehouse-pipeline:f23d0f8c-23d4-48ce-81eb-0a4da3aff258",
+    "stateMachineArn" : "arn:aws:states:us-east-1:000000000000:stateMachine:lakehouse-pipeline",
+    "stateMachineVersionArn" : null,
+    "stateMachineAliasArn" : null,
+    "name" : "f23d0f8c-23d4-48ce-81eb-0a4da3aff258",
+    "status" : "SUCCEEDED",
+    "input" : "{\n  \"bucket\": \"lakehouse-landing\",\n  \"key\": \"anp/anp_sample.csv\",\n  \"offset\": 0,\n  \"limit\": 1000,\n  \"fault_rate\": 0.05,\n  \"sep\": \";\",\n  \"encoding\": \"utf-8-sig\"\n}\n",
+    "output" : "{\"silver_records\":10,\"wells\":5,\"field_rows\":3}",
+    "startDate" : 1.790993273517E9,
+    "stopDate" : 1.790993307882E9,
+    "error" : null,
+    "cause" : null,
+    "history" : [ {
+      "id" : 1,
+      "timestamp" : 1.790993273517E9,
+      "type" : "ExecutionStarted",
+      "previousEventId" : 0,
+      "details" : {
+        "inputDetails" : {
+          "truncated" : false
+        },
+        "roleArn" : "arn:aws:iam::000000000000:role/lakehouse-role",
+        "input" : "{\n  \"bucket\": \"lakehouse-landing\",\n  \"key\": \"anp/anp_sample.csv\",\n  \"offset\": 0,\n  \"limit\": 1000,\n  \"fault_rate\": 0.05,\n  \"sep\": \";\",\n  \"encoding\": \"utf-8-sig\"\n}\n"
+      }
+    }, {
+      "id" : 2,
+      "timestamp" : 1.790993273517E9,
+      "type" : "TaskStateEntered",
+      "previousEventId" : 0,
+      "details" : {
+        "inputDetails" : {
+          "truncated" : false
+        },
+        "name" : "Extract",
+        "input" : "{\"bucket\":\"lakehouse-landing\",\"key\":\"anp/anp_sample.csv\",\"offset\":0,\"limit\":1000,\"fault_rate\":0.05,\"sep\":\";\",\"encoding\":\"utf-8-sig\"}"
+      }
+    }, {
+      "id" : 3,
+      "timestamp" : 1.790993273517E9,
+      "type" : "TaskScheduled",
+      "previousEventId" : 2,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke",
+        "region" : "us-east-1",
+        "parameters" : "{\"FunctionName\":\"lakehouse-extract\",\"Payload\":{\"bucket\":\"lakehouse-landing\",\"key\":\"anp/anp_sample.csv\",\"offset\":0,\"limit\":1000,\"fault_rate\":0.05,\"sep\":\";\",\"encoding\":\"utf-8-sig\"}}"
+      }
+    }, {
+      "id" : 4,
+      "timestamp" : 1.790993273517E9,
+      "type" : "TaskStarted",
+      "previousEventId" : 3,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke"
+      }
+    }, {
+      "id" : 5,
+      "timestamp" : 1.790993275456E9,
+      "type" : "TaskSucceeded",
+      "previousEventId" : 4,
+      "details" : {
+        "outputDetails" : {
+          "truncated" : false
+        },
+        "output" : "{\"ExecutedVersion\":\"$LATEST\",\"Payload\":{\"bucket\":\"lakehouse-landing\",\"key\":\"anp/anp_sample.csv\",\"offset\":5,\"limit\":1000,\"fault_rate\":0.05,\"sep\":\";\",\"encoding\":\"utf-8-sig\",\"sent\":5,\"done\":true},\"StatusCode\":200}",
+        "resourceType" : "lambda",
+        "resource" : "invoke"
+      }
+    }, {
+      "id" : 6,
+      "timestamp" : 1.790993275456E9,
+      "type" : "TaskStateExited",
+      "previousEventId" : 5,
+      "details" : {
+        "output" : "{\"bucket\":\"lakehouse-landing\",\"key\":\"anp/anp_sample.csv\",\"offset\":5,\"limit\":1000,\"fault_rate\":0.05,\"sep\":\";\",\"encoding\":\"utf-8-sig\",\"sent\":5,\"done\":true}",
+        "outputDetails" : {
+          "truncated" : false
+        },
+        "name" : "Extract"
+      }
+    }, {
+      "id" : 7,
+      "timestamp" : 1.790993275456E9,
+      "type" : "ChoiceStateEntered",
+      "previousEventId" : 6,
+      "details" : {
+        "inputDetails" : {
+          "truncated" : false
+        },
+        "name" : "MoreRows",
+        "input" : "{\"bucket\":\"lakehouse-landing\",\"key\":\"anp/anp_sample.csv\",\"offset\":5,\"limit\":1000,\"fault_rate\":0.05,\"sep\":\";\",\"encoding\":\"utf-8-sig\",\"sent\":5,\"done\":true}"
+      }
+    }, {
+      "id" : 8,
+      "timestamp" : 1.790993275456E9,
+      "type" : "ChoiceStateExited",
+      "previousEventId" : 7,
+      "details" : {
+        "output" : "{\"bucket\":\"lakehouse-landing\",\"key\":\"anp/anp_sample.csv\",\"offset\":5,\"limit\":1000,\"fault_rate\":0.05,\"sep\":\";\",\"encoding\":\"utf-8-sig\",\"sent\":5,\"done\":true}",
+        "outputDetails" : {
+          "truncated" : false
+        },
+        "name" : "MoreRows"
+      }
+    }, {
+      "id" : 9,
+      "timestamp" : 1.790993275456E9,
+      "type" : "WaitStateEntered",
+      "previousEventId" : 8,
+      "details" : {
+        "inputDetails" : {
+          "truncated" : false
+        },
+        "name" : "WaitForFirehose",
+        "input" : "{\"bucket\":\"lakehouse-landing\",\"key\":\"anp/anp_sample.csv\",\"offset\":5,\"limit\":1000,\"fault_rate\":0.05,\"sep\":\";\",\"encoding\":\"utf-8-sig\",\"sent\":5,\"done\":true}"
+      }
+    }, {
+      "id" : 10,
+      "timestamp" : 1.790993305455E9,
+      "type" : "WaitStateExited",
+      "previousEventId" : 9,
+      "details" : {
+        "output" : "{\"bucket\":\"lakehouse-landing\",\"key\":\"anp/anp_sample.csv\",\"offset\":5,\"limit\":1000,\"fault_rate\":0.05,\"sep\":\";\",\"encoding\":\"utf-8-sig\",\"sent\":5,\"done\":true}",
+        "outputDetails" : {
+          "truncated" : false
+        },
+        "name" : "WaitForFirehose"
+      }
+    }, {
+      "id" : 11,
+      "timestamp" : 1.790993305455E9,
+      "type" : "TaskStateEntered",
+      "previousEventId" : 10,
+      "details" : {
+        "inputDetails" : {
+          "truncated" : false
+        },
+        "name" : "Transform",
+        "input" : "{\"bucket\":\"lakehouse-landing\",\"key\":\"anp/anp_sample.csv\",\"offset\":5,\"limit\":1000,\"fault_rate\":0.05,\"sep\":\";\",\"encoding\":\"utf-8-sig\",\"sent\":5,\"done\":true}"
+      }
+    }, {
+      "id" : 12,
+      "timestamp" : 1.790993305455E9,
+      "type" : "TaskScheduled",
+      "previousEventId" : 11,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke",
+        "region" : "us-east-1",
+        "parameters" : "{\"FunctionName\":\"lakehouse-transform\",\"Payload\":{\"bucket\":\"lakehouse-bronze\",\"prefix\":\"anp/\"}}"
+      }
+    }, {
+      "id" : 13,
+      "timestamp" : 1.790993305455E9,
+      "type" : "TaskStarted",
+      "previousEventId" : 12,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke"
+      }
+    }, {
+      "id" : 14,
+      "timestamp" : 1.790993307723E9,
+      "type" : "TaskSucceeded",
+      "previousEventId" : 13,
+      "details" : {
+        "outputDetails" : {
+          "truncated" : false
+        },
+        "output" : "{\"ExecutedVersion\":\"$LATEST\",\"Payload\":{\"valid\":5,\"rejected\":0,\"duplicates\":0},\"StatusCode\":200}",
+        "resourceType" : "lambda",
+        "resource" : "invoke"
+      }
+    }, {
+      "id" : 15,
+      "timestamp" : 1.790993307723E9,
+      "type" : "TaskStateExited",
+      "previousEventId" : 14,
+      "details" : {
+        "output" : "{\"valid\":5,\"rejected\":0,\"duplicates\":0}",
+        "outputDetails" : {
+          "truncated" : false
+        },
+        "name" : "Transform"
+      }
+    }, {
+      "id" : 16,
+      "timestamp" : 1.790993307723E9,
+      "type" : "TaskStateEntered",
+      "previousEventId" : 15,
+      "details" : {
+        "inputDetails" : {
+          "truncated" : false
+        },
+        "name" : "Aggregate",
+        "input" : "{\"valid\":5,\"rejected\":0,\"duplicates\":0}"
+      }
+    }, {
+      "id" : 17,
+      "timestamp" : 1.790993307723E9,
+      "type" : "TaskScheduled",
+      "previousEventId" : 16,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke",
+        "region" : "us-east-1",
+        "parameters" : "{\"FunctionName\":\"lakehouse-aggregate\",\"Payload\":{\"valid\":5,\"rejected\":0,\"duplicates\":0}}"
+      }
+    }, {
+      "id" : 18,
+      "timestamp" : 1.790993307723E9,
+      "type" : "TaskStarted",
+      "previousEventId" : 17,
+      "details" : {
+        "resourceType" : "lambda",
+        "resource" : "invoke"
+      }
+    }, {
+      "id" : 19,
+      "timestamp" : 1.790993307881E9,
+      "type" : "TaskSucceeded",
+      "previousEventId" : 18,
+      "details" : {
+        "outputDetails" : {
+          "truncated" : false
+        },
+        "output" : "{\"ExecutedVersion\":\"$LATEST\",\"Payload\":{\"silver_records\":10,\"wells\":5,\"field_rows\":3},\"StatusCode\":200}",
+        "resourceType" : "lambda",
+        "resource" : "invoke"
+      }
+    }, {
+      "id" : 20,
+      "timestamp" : 1.790993307882E9,
+      "type" : "TaskStateExited",
+      "previousEventId" : 19,
+      "details" : {
+        "output" : "{\"silver_records\":10,\"wells\":5,\"field_rows\":3}",
+        "outputDetails" : {
+          "truncated" : false
+        },
+        "name" : "Aggregate"
+      }
+    }, {
+      "id" : 21,
+      "timestamp" : 1.790993307882E9,
+      "type" : "ExecutionSucceeded",
+      "previousEventId" : 20,
+      "details" : {
+        "outputDetails" : {
+          "truncated" : false
+        },
+        "output" : "{\"silver_records\":10,\"wells\":5,\"field_rows\":3}"
+      }
+    } ]
+  },
   "000000000000/arn:aws:states:us-east-1:000000000000:execution:lakehouse-pipeline:33481ba5-9d37-4cf4-b873-c85984dcd335" : {
     "executionArn" : "arn:aws:states:us-east-1:000000000000:execution:lakehouse-pipeline:33481ba5-9d37-4cf4-b873-c85984dcd335",
     "stateMachineArn" : "arn:aws:states:us-east-1:000000000000:stateMachine:lakehouse-pipeline",

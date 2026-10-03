@@ -1,0 +1,45 @@
+{
+  "Name": "well_production",
+  "TableType": "EXTERNAL_TABLE",
+  "Parameters": {
+    "classification": "json"
+  },
+  "StorageDescriptor": {
+    "Columns": [
+      {
+        "Name": "event_id",
+        "Type": "string"
+      },
+      {
+        "Name": "ingested_at",
+        "Type": "string"
+      },
+      {
+        "Name": "basin",
+        "Type": "string"
+      },
+      {
+        "Name": "field",
+        "Type": "string"
+      },
+      {
+        "Name": "well",
+        "Type": "string"
+      },
+      {
+        "Name": "period",
+        "Type": "string"
+      },
+      {
+        "Name": "oil_volume",
+        "Type": "double"
+      }
+    ],
+    "Location": "s3://lakehouse-gold/well_production/",
+    "InputFormat": "org.apache.hadoop.mapred.TextInputFormat",
+    "OutputFormat": "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat",
+    "SerdeInfo": {
+      "SerializationLibrary": "org.openx.data.jsonserde.JsonSerDe"
+    }
+  }
+}

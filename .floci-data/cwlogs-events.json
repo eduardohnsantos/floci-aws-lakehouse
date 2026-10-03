@@ -27,6 +27,13 @@
     "ingestionTime" : 1790910383481,
     "sequence" : 24
   },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-aggregate::2026/10/02/[$LATEST]e1536fa3::001790975743172::8a6254bd-fe81-4f92-ac5b-13e4ae672559" : {
+    "eventId" : "8a6254bd-fe81-4f92-ac5b-13e4ae672559",
+    "timestamp" : 1790975743172,
+    "message" : "[ERROR] Runtime.HandlerNotFound: Handler 'handler' missing on module 'lakehouse.aggregate'\rTraceback (most recent call last):",
+    "ingestionTime" : 1790975743172,
+    "sequence" : 46
+  },
   "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383462::82112848-4a4c-4d49-a66a-6f9d16b0202c" : {
     "eventId" : "82112848-4a4c-4d49-a66a-6f9d16b0202c",
     "timestamp" : 1790910383462,
@@ -40,6 +47,13 @@
     "message" : "    response_body, headers = future.result()",
     "ingestionTime" : 1790910383475,
     "sequence" : 4
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]0c2f1492::001790975692786::9715a5d6-53ea-405e-b03c-f1891e965a3b" : {
+    "eventId" : "9715a5d6-53ea-405e-b03c-f1891e965a3b",
+    "timestamp" : 1790975692786,
+    "message" : "[ERROR] RuntimeError: bronze is empty: no records to process yet\rTraceback (most recent call last):\r  File \"/var/task/lakehouse/handler.py\", line 74, in handler\r    raise RuntimeError(\"bronze is empty: no records to process yet\")",
+    "ingestionTime" : 1790975692786,
+    "sequence" : 40
   },
   "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383483::954a3745-7d99-4fdf-89eb-b0f32a7614ae" : {
     "eventId" : "954a3745-7d99-4fdf-89eb-b0f32a7614ae",
@@ -83,6 +97,20 @@
     "ingestionTime" : 1790910383483,
     "sequence" : 29
   },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]0c2f1492::001790975662766::7d83cb32-4d48-4043-a573-f2cf86daece1" : {
+    "eventId" : "7d83cb32-4d48-4043-a573-f2cf86daece1",
+    "timestamp" : 1790975662766,
+    "message" : "[ERROR] RuntimeError: bronze is empty: no records to process yet\rTraceback (most recent call last):\r  File \"/var/task/lakehouse/handler.py\", line 74, in handler\r    raise RuntimeError(\"bronze is empty: no records to process yet\")",
+    "ingestionTime" : 1790975662766,
+    "sequence" : 39
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-aggregate::2026/10/02/[$LATEST]e1536fa3::001790975743171::e1b5a741-6862-495a-82f7-2e7b80e7657c" : {
+    "eventId" : "e1b5a741-6862-495a-82f7-2e7b80e7657c",
+    "timestamp" : 1790975743171,
+    "message" : "[WARNING]\t2026-10-02T21:15:43.126Z\t\tLAMBDA_WARNING: Unhandled exception. The most likely cause is an issue in the function code. However, in rare cases, a Lambda runtime update can cause unexpected function behavior. For functions using managed runtimes, runtime updates can be triggered by a function change, or can be applied automatically. To determine if the runtime has been updated, check the runtime version in the INIT_START log entry. If this error correlates with a change in the runtime version, you may be able to mitigate this error by temporarily rolling back to the previous runtime version. For more information, see https://docs.aws.amazon.com/lambda/latest/dg/runtimes-update.html",
+    "ingestionTime" : 1790975743171,
+    "sequence" : 45
+  },
   "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383484::e6480a71-4f91-4d1d-8e09-80643bb720a5" : {
     "eventId" : "e6480a71-4f91-4d1d-8e09-80643bb720a5",
     "timestamp" : 1790910383484,
@@ -103,6 +131,13 @@
     "message" : "    raise FaultException(",
     "ingestionTime" : 1790910383484,
     "sequence" : 35
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-aggregate::2026/10/02/[$LATEST]8ef371f4::001790975724036::7d7fdbdb-b13c-4025-b77f-336d223ebac1" : {
+    "eventId" : "7d7fdbdb-b13c-4025-b77f-336d223ebac1",
+    "timestamp" : 1790975724036,
+    "message" : "[WARNING]\t2026-10-02T21:15:24.033Z\t\tLAMBDA_WARNING: Unhandled exception. The most likely cause is an issue in the function code. However, in rare cases, a Lambda runtime update can cause unexpected function behavior. For functions using managed runtimes, runtime updates can be triggered by a function change, or can be applied automatically. To determine if the runtime has been updated, check the runtime version in the INIT_START log entry. If this error correlates with a change in the runtime version, you may be able to mitigate this error by temporarily rolling back to the previous runtime version. For more information, see https://docs.aws.amazon.com/lambda/latest/dg/runtimes-update.html",
+    "ingestionTime" : 1790975724036,
+    "sequence" : 41
   },
   "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383484::e09a671b-ace4-42ba-b1bc-f1d08c0e19c8" : {
     "eventId" : "e09a671b-ace4-42ba-b1bc-f1d08c0e19c8",
@@ -152,6 +187,13 @@
     "message" : "    return self.handle_exception(e, runtime_client.next, True)",
     "ingestionTime" : 1790910383479,
     "sequence" : 15
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-aggregate::2026/10/02/[$LATEST]8ef371f4::001790975724036::d1bd1037-3f76-46e1-bc91-7fbb870791e3" : {
+    "eventId" : "d1bd1037-3f76-46e1-bc91-7fbb870791e3",
+    "timestamp" : 1790975724036,
+    "message" : "[ERROR] Runtime.HandlerNotFound: Handler 'handler' missing on module 'lakehouse.aggregate'\rTraceback (most recent call last):",
+    "ingestionTime" : 1790975724036,
+    "sequence" : 42
   },
   "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383476::d9b260f6-044d-4872-a8ea-22938c28454e" : {
     "eventId" : "d9b260f6-044d-4872-a8ea-22938c28454e",
@@ -216,6 +258,13 @@
     "ingestionTime" : 1790910383476,
     "sequence" : 6
   },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-aggregate::2026/10/02/[$LATEST]9b54b691::001790975730997::734a180c-e8fb-4d46-b79d-87a7a2f56861" : {
+    "eventId" : "734a180c-e8fb-4d46-b79d-87a7a2f56861",
+    "timestamp" : 1790975730997,
+    "message" : "[WARNING]\t2026-10-02T21:15:30.995Z\t\tLAMBDA_WARNING: Unhandled exception. The most likely cause is an issue in the function code. However, in rare cases, a Lambda runtime update can cause unexpected function behavior. For functions using managed runtimes, runtime updates can be triggered by a function change, or can be applied automatically. To determine if the runtime has been updated, check the runtime version in the INIT_START log entry. If this error correlates with a change in the runtime version, you may be able to mitigate this error by temporarily rolling back to the previous runtime version. For more information, see https://docs.aws.amazon.com/lambda/latest/dg/runtimes-update.html",
+    "ingestionTime" : 1790975730997,
+    "sequence" : 43
+  },
   "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383479::e34f55d6-aa00-4eb6-8507-200fb8a64bd3" : {
     "eventId" : "e34f55d6-aa00-4eb6-8507-200fb8a64bd3",
     "timestamp" : 1790910383479,
@@ -257,6 +306,13 @@
     "message" : "    return self.__get_result()",
     "ingestionTime" : 1790910383476,
     "sequence" : 7
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-aggregate::2026/10/02/[$LATEST]9b54b691::001790975730997::94308026-6650-4167-afc2-8db69e0dce29" : {
+    "eventId" : "94308026-6650-4167-afc2-8db69e0dce29",
+    "timestamp" : 1790975730997,
+    "message" : "[ERROR] Runtime.HandlerNotFound: Handler 'handler' missing on module 'lakehouse.aggregate'\rTraceback (most recent call last):",
+    "ingestionTime" : 1790975730997,
+    "sequence" : 44
   },
   "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e::001790910383479::4c0b5cb6-49d3-4dd0-897f-50b6fe1ea5b0" : {
     "eventId" : "4c0b5cb6-49d3-4dd0-897f-50b6fe1ea5b0",

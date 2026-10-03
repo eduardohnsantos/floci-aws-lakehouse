@@ -1,0 +1,37 @@
+{
+  "Name": "field_monthly",
+  "TableType": "EXTERNAL_TABLE",
+  "Parameters": {
+    "classification": "json"
+  },
+  "StorageDescriptor": {
+    "Columns": [
+      {
+        "Name": "field",
+        "Type": "string"
+      },
+      {
+        "Name": "period",
+        "Type": "string"
+      },
+      {
+        "Name": "total_oil",
+        "Type": "double"
+      },
+      {
+        "Name": "wells",
+        "Type": "int"
+      },
+      {
+        "Name": "avg_oil_per_well",
+        "Type": "double"
+      }
+    ],
+    "Location": "s3://lakehouse-gold/field_monthly/",
+    "InputFormat": "org.apache.hadoop.mapred.TextInputFormat",
+    "OutputFormat": "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat",
+    "SerdeInfo": {
+      "SerializationLibrary": "org.openx.data.jsonserde.JsonSerDe"
+    }
+  }
+}

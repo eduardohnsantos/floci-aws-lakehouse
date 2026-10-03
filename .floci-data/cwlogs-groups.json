@@ -7,6 +7,14 @@
     "kmsKeyId" : null,
     "tags" : { }
   },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-aggregate" : {
+    "logGroupName" : "/aws/lambda/lakehouse-aggregate",
+    "createdTime" : 1790975723999,
+    "retentionInDays" : null,
+    "deletionProtectionEnabled" : false,
+    "kmsKeyId" : null,
+    "tags" : { }
+  },
   "000000000000/us-east-1::/aws/lambda/lakehouse-extract" : {
     "logGroupName" : "/aws/lambda/lakehouse-extract",
     "createdTime" : 1790909193749,

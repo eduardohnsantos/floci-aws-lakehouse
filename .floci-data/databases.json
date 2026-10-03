@@ -1,0 +1,10 @@
+{
+  "000000000000/lakehouse" : {
+    "Name" : "lakehouse",
+    "Description" : null,
+    "LocationUri" : null,
+    "Parameters" : null,
+    "CreateTime" : null,
+    "CatalogId" : "000000000000"
+  }
+}

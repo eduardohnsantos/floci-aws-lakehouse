@@ -1,0 +1,126 @@
+{
+  "000000000000/lakehouse:well_production" : {
+    "Name" : "well_production",
+    "DatabaseName" : "lakehouse",
+    "Description" : null,
+    "Owner" : null,
+    "CreateTime" : 1790994599.425716952,
+    "UpdateTime" : null,
+    "LastAccessTime" : null,
+    "PartitionKeys" : null,
+    "StorageDescriptor" : {
+      "Columns" : [ {
+        "Name" : "event_id",
+        "Type" : "string",
+        "Comment" : null,
+        "Parameters" : null
+      }, {
+        "Name" : "ingested_at",
+        "Type" : "string",
+        "Comment" : null,
+        "Parameters" : null
+      }, {
+        "Name" : "basin",
+        "Type" : "string",
+        "Comment" : null,
+        "Parameters" : null
+      }, {
+        "Name" : "field",
+        "Type" : "string",
+        "Comment" : null,
+        "Parameters" : null
+      }, {
+        "Name" : "well",
+        "Type" : "string",
+        "Comment" : null,
+        "Parameters" : null
+      }, {
+        "Name" : "period",
+        "Type" : "string",
+        "Comment" : null,
+        "Parameters" : null
+      }, {
+        "Name" : "oil_volume",
+        "Type" : "double",
+        "Comment" : null,
+        "Parameters" : null
+      } ],
+      "Location" : "s3://lakehouse-gold/well_production/",
+      "InputFormat" : "org.apache.hadoop.mapred.TextInputFormat",
+      "OutputFormat" : "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat",
+      "Compressed" : null,
+      "NumberOfBuckets" : null,
+      "SerdeInfo" : {
+        "Name" : null,
+        "SerializationLibrary" : "org.openx.data.jsonserde.JsonSerDe",
+        "Parameters" : null
+      },
+      "Parameters" : null,
+      "SchemaReference" : null
+    },
+    "TableType" : "EXTERNAL_TABLE",
+    "ViewOriginalText" : null,
+    "ViewExpandedText" : null,
+    "VersionId" : "0",
+    "Parameters" : {
+      "classification" : "json"
+    }
+  },
+  "000000000000/lakehouse:field_monthly" : {
+    "Name" : "field_monthly",
+    "DatabaseName" : "lakehouse",
+    "Description" : null,
+    "Owner" : null,
+    "CreateTime" : 1790994600.498281358,
+    "UpdateTime" : null,
+    "LastAccessTime" : null,
+    "PartitionKeys" : null,
+    "StorageDescriptor" : {
+      "Columns" : [ {
+        "Name" : "field",
+        "Type" : "string",
+        "Comment" : null,
+        "Parameters" : null
+      }, {
+        "Name" : "period",
+        "Type" : "string",
+        "Comment" : null,
+        "Parameters" : null
+      }, {
+        "Name" : "total_oil",
+        "Type" : "double",
+        "Comment" : null,
+        "Parameters" : null
+      }, {
+        "Name" : "wells",
+        "Type" : "int",
+        "Comment" : null,
+        "Parameters" : null
+      }, {
+        "Name" : "avg_oil_per_well",
+        "Type" : "double",
+        "Comment" : null,
+        "Parameters" : null
+      } ],
+      "Location" : "s3://lakehouse-gold/field_monthly/",
+      "InputFormat" : "org.apache.hadoop.mapred.TextInputFormat",
+      "OutputFormat" : "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat",
+      "Compressed" : null,
+      "NumberOfBuckets" : null,
+      "SerdeInfo" : {
+        "Name" : null,
+        "SerializationLibrary" : "org.openx.data.jsonserde.JsonSerDe",
+        "Parameters" : null
+      },
+      "Parameters" : null,
+      "SchemaReference" : null
+    },
+    "TableType" : "EXTERNAL_TABLE",
+    "ViewOriginalText" : null,
+    "ViewExpandedText" : null,
+    "VersionId" : "0",
+    "Parameters" : {
+      "classification" : "json"
+    }
+  }
+}

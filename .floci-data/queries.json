@@ -1,0 +1,29 @@
+{
+  "000000000000/02ed288a-cda1-424e-97b6-05eb5865a3d1" : {
+    "QueryExecutionId" : "02ed288a-cda1-424e-97b6-05eb5865a3d1",
+    "Query" : "SELECT field, period, total_oil, wells FROM lakehouse.field_monthly ORDER BY total_oil DESC",
+    "Status" : {
+      "State" : "SUCCEEDED",
+      "StateChangeReason" : null,
+      "SubmissionDateTime" : 1790994646.790976851,
+      "CompletionDateTime" : 1790994663.130784985
+    },
+    "WorkGroup" : "primary",
+    "StatementType" : "DML",
+    "Statistics" : {
+      "EngineExecutionTimeInMillis" : 1,
+      "DataScannedInBytes" : 0
+    },
+    "EngineVersion" : {
+      "SelectedEngineVersion" : "Athena engine version 3",
+      "EffectiveEngineVersion" : "Athena engine version 3"
+    },
+    "ResultConfiguration" : {
+      "OutputLocation" : "s3://lakehouse-athena-results/02ed288a-cda1-424e-97b6-05eb5865a3d1.csv"
+    },
+    "QueryExecutionContext" : {
+      "Database" : "default",
+      "Catalog" : "AwsDataCatalog"
+    }
+  }
+}

@@ -9,6 +9,66 @@
     "uploadSequenceToken" : "a0f23839-972b-4cd6-8acb-3c5dfc00c6bd",
     "storedBytes" : 0
   },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-aggregate::2026/10/02/[$LATEST]6ff27e54" : {
+    "logGroupName" : "/aws/lambda/lakehouse-aggregate",
+    "logStreamName" : "2026/10/02/[$LATEST]6ff27e54",
+    "createdTime" : 1790976159198,
+    "firstEventTimestamp" : null,
+    "lastEventTimestamp" : null,
+    "lastIngestionTime" : 0,
+    "uploadSequenceToken" : "c1999fcb-984d-439d-8b11-938feb93366b",
+    "storedBytes" : 0
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]0c2f1492" : {
+    "logGroupName" : "/aws/lambda/lakehouse-transform",
+    "logStreamName" : "2026/10/02/[$LATEST]0c2f1492",
+    "createdTime" : 1790975662304,
+    "firstEventTimestamp" : 1790975662766,
+    "lastEventTimestamp" : 1790975692786,
+    "lastIngestionTime" : 1790975692786,
+    "uploadSequenceToken" : "62f7b3f5-bbaf-43ee-8683-1365263d78e4",
+    "storedBytes" : 522
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-aggregate::2026/10/02/[$LATEST]e1536fa3" : {
+    "logGroupName" : "/aws/lambda/lakehouse-aggregate",
+    "logStreamName" : "2026/10/02/[$LATEST]e1536fa3",
+    "createdTime" : 1790975743146,
+    "firstEventTimestamp" : 1790975743171,
+    "lastEventTimestamp" : 1790975743172,
+    "lastIngestionTime" : 1790975743172,
+    "uploadSequenceToken" : "778a03e9-4320-4351-91c1-fe4634c66c95",
+    "storedBytes" : 875
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-extract::2026/10/02/[$LATEST]e435c947" : {
+    "logGroupName" : "/aws/lambda/lakehouse-extract",
+    "logStreamName" : "2026/10/02/[$LATEST]e435c947",
+    "createdTime" : 1790975630829,
+    "firstEventTimestamp" : null,
+    "lastEventTimestamp" : null,
+    "lastIngestionTime" : 0,
+    "uploadSequenceToken" : "936e0337-0e40-44df-ab69-e0d919f8bd40",
+    "storedBytes" : 0
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e" : {
+    "logGroupName" : "/aws/lambda/lakehouse-transform",
+    "logStreamName" : "2026/10/02/[$LATEST]bf9d924e",
+    "createdTime" : 1790910224085,
+    "firstEventTimestamp" : 1790910383462,
+    "lastEventTimestamp" : 1790910383484,
+    "lastIngestionTime" : 1790910383484,
+    "uploadSequenceToken" : "aea86550-bf6f-4562-992c-74ecd11057f4",
+    "storedBytes" : 3222
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-aggregate::2026/10/02/[$LATEST]8ef371f4" : {
+    "logGroupName" : "/aws/lambda/lakehouse-aggregate",
+    "logStreamName" : "2026/10/02/[$LATEST]8ef371f4",
+    "createdTime" : 1790975723999,
+    "firstEventTimestamp" : 1790975724036,
+    "lastEventTimestamp" : 1790975724036,
+    "lastIngestionTime" : 1790975724036,
+    "uploadSequenceToken" : "5988c4fd-944b-48da-b0f0-39e0b6158c03",
+    "storedBytes" : 875
+  },
   "000000000000/us-east-1::/aws/lambda/lakehouse-extract::2026/10/02/[$LATEST]5ab66a2f" : {
     "logGroupName" : "/aws/lambda/lakehouse-extract",
     "logStreamName" : "2026/10/02/[$LATEST]5ab66a2f",
@@ -18,6 +78,26 @@
     "lastIngestionTime" : 0,
     "uploadSequenceToken" : "874d0755-b65e-4737-b150-8f8c36486d73",
     "storedBytes" : 0
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/03/[$LATEST]11e92b8c" : {
+    "logGroupName" : "/aws/lambda/lakehouse-transform",
+    "logStreamName" : "2026/10/03/[$LATEST]11e92b8c",
+    "createdTime" : 1790993306552,
+    "firstEventTimestamp" : null,
+    "lastEventTimestamp" : null,
+    "lastIngestionTime" : 0,
+    "uploadSequenceToken" : "a4b69207-3217-476a-a36b-c24d9a351e8e",
+    "storedBytes" : 0
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-aggregate::2026/10/02/[$LATEST]9b54b691" : {
+    "logGroupName" : "/aws/lambda/lakehouse-aggregate",
+    "logStreamName" : "2026/10/02/[$LATEST]9b54b691",
+    "createdTime" : 1790975730949,
+    "firstEventTimestamp" : 1790975730997,
+    "lastEventTimestamp" : 1790975730997,
+    "lastIngestionTime" : 1790975730997,
+    "uploadSequenceToken" : "2dd6558d-3e08-4dce-b080-bbe4ba7759fc",
+    "storedBytes" : 875
   },
   "000000000000/us-east-1::/aws/lambda/lakehouse-extract::2026/10/02/[$LATEST]656c3fd9" : {
     "logGroupName" : "/aws/lambda/lakehouse-extract",
@@ -59,15 +139,15 @@
     "uploadSequenceToken" : "86c5f1da-f14b-4194-ae76-5241355391c3",
     "storedBytes" : 522
   },
-  "000000000000/us-east-1::/aws/lambda/lakehouse-transform::2026/10/02/[$LATEST]bf9d924e" : {
-    "logGroupName" : "/aws/lambda/lakehouse-transform",
-    "logStreamName" : "2026/10/02/[$LATEST]bf9d924e",
-    "createdTime" : 1790910224085,
-    "firstEventTimestamp" : 1790910383462,
-    "lastEventTimestamp" : 1790910383484,
-    "lastIngestionTime" : 1790910383484,
-    "uploadSequenceToken" : "aea86550-bf6f-4562-992c-74ecd11057f4",
-    "storedBytes" : 3222
+  "000000000000/us-east-1::/aws/lambda/lakehouse-extract::2026/10/03/[$LATEST]9e58436c" : {
+    "logGroupName" : "/aws/lambda/lakehouse-extract",
+    "logStreamName" : "2026/10/03/[$LATEST]9e58436c",
+    "createdTime" : 1790993275001,
+    "firstEventTimestamp" : null,
+    "lastEventTimestamp" : null,
+    "lastIngestionTime" : 0,
+    "uploadSequenceToken" : "a44b2588-c1b3-4825-bf57-6b4ac4251673",
+    "storedBytes" : 0
   },
   "000000000000/us-east-1::/aws/lambda/lakehouse-extract::2026/10/02/[$LATEST]dc63e32d" : {
     "logGroupName" : "/aws/lambda/lakehouse-extract",
@@ -77,6 +157,16 @@
     "lastEventTimestamp" : null,
     "lastIngestionTime" : 0,
     "uploadSequenceToken" : "dbf8c9bb-2460-4958-a4fa-6eda42d679e0",
+    "storedBytes" : 0
+  },
+  "000000000000/us-east-1::/aws/lambda/lakehouse-aggregate::2026/10/03/[$LATEST]f8456f93" : {
+    "logGroupName" : "/aws/lambda/lakehouse-aggregate",
+    "logStreamName" : "2026/10/03/[$LATEST]f8456f93",
+    "createdTime" : 1790993253104,
+    "firstEventTimestamp" : null,
+    "lastEventTimestamp" : null,
+    "lastIngestionTime" : 0,
+    "uploadSequenceToken" : "570837b9-62d5-4b93-b35b-5de67c74314f",
     "storedBytes" : 0
   }
 }

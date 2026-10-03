@@ -1,0 +1,3 @@
+{"field": "CAMPO EXEMPLO A", "period": "2021-05", "total_oil": 1234.5, "wells": 2, "avg_oil_per_well": 617.25}
+{"field": "CAMPO EXEMPLO B", "period": "2021-05", "total_oil": 15.25, "wells": 1, "avg_oil_per_well": 15.25}
+{"field": "MARLIM LESTE", "period": "2021-05", "total_oil": 194.5653, "wells": 2, "avg_oil_per_well": 97.2826}

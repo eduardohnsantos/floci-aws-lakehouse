@@ -1,5 +1,5 @@
 {
-  "Comment": "Extract (chunked loop) -> wait -> transform with retries, alert on failure",
+  "Comment": "Extract (chunked loop) -> wait -> transform (retries) -> aggregate to gold, alert on failure",
   "StartAt": "Extract",
   "States": {
     "Extract": {
@@ -12,19 +12,32 @@
       "OutputPath": "$.Payload",
       "Retry": [
         {
-          "ErrorEquals": ["States.ALL"],
+          "ErrorEquals": [
+            "States.ALL"
+          ],
           "IntervalSeconds": 5,
           "MaxAttempts": 2,
           "BackoffRate": 2
         }
       ],
-      "Catch": [{ "ErrorEquals": ["States.ALL"], "Next": "NotifyFailure" }],
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "Next": "NotifyFailure"
+        }
+      ],
       "Next": "MoreRows"
     },
     "MoreRows": {
       "Type": "Choice",
       "Choices": [
-        { "Variable": "$.done", "BooleanEquals": true, "Next": "WaitForFirehose" }
+        {
+          "Variable": "$.done",
+          "BooleanEquals": true,
+          "Next": "WaitForFirehose"
+        }
       ],
       "Default": "Extract"
     },
@@ -38,18 +51,58 @@
       "Resource": "arn:aws:states:::lambda:invoke",
       "Parameters": {
         "FunctionName": "lakehouse-transform",
-        "Payload": { "bucket": "lakehouse-bronze", "prefix": "anp/" }
+        "Payload": {
+          "bucket": "lakehouse-bronze",
+          "prefix": "anp/"
+        }
       },
       "OutputPath": "$.Payload",
       "Retry": [
         {
-          "ErrorEquals": ["States.ALL"],
+          "ErrorEquals": [
+            "States.ALL"
+          ],
           "IntervalSeconds": 30,
           "MaxAttempts": 6,
           "BackoffRate": 1.0
         }
       ],
-      "Catch": [{ "ErrorEquals": ["States.ALL"], "Next": "NotifyFailure" }],
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "Next": "NotifyFailure"
+        }
+      ],
+      "Next": "Aggregate"
+    },
+    "Aggregate": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "lakehouse-aggregate",
+        "Payload.$": "$"
+      },
+      "OutputPath": "$.Payload",
+      "Retry": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "IntervalSeconds": 5,
+          "MaxAttempts": 2,
+          "BackoffRate": 2
+        }
+      ],
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "Next": "NotifyFailure"
+        }
+      ],
       "End": true
     },
     "NotifyFailure": {
